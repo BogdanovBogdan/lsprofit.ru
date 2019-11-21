@@ -484,6 +484,8 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 .row-one__users,
@@ -519,60 +521,93 @@ h2 {
 }
 
 .row-one__users {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   height: 77px;
 }
 
 .row-one__arrows {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
   top: -20px;
   height: 55px;
 }
 
 .row-one__comment {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
   right: 30%;
 }
 
 .row-two__users {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   height: 55px;
 }
 
 .row-two__arrows {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
   top: -10px;
 }
 
 .row-two__comment {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
   right: 20%;
 }
 
 .row-three__users {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
   height: 50px;
 }
 
 .row-three__arrows {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
   top: -7px;
 }
 
 .row-three__comment {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
   right: 10%;
 }
 
 .row-four__users {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
   height: 36px;
 }
 
 .row-four__arrows {
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
   top: -9px;
 }
 
 .row-four__comment {
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
   right: 2%;
 }
 
 .row-five__users {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
   height: 32px;
 }
 
 .row-five__arrows {
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
   display: block;
+}
+
+.row-five__comment {
+  -webkit-animation-delay: 5.5s;
+  animation-delay: 5.5s;
 }
 
 .tariffs {
