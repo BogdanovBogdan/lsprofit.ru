@@ -116,6 +116,7 @@ h2 {
 .subtitle {
   font-size: 2.4rem;
   font-weight: 300;
+  margin-top: 2rem;
 }
 
 .btn-center {
@@ -230,6 +231,7 @@ h2 {
 
 .header {
   background: url("../img/header/bg.jpg") top no-repeat;
+  background-size: cover;
   padding-top: 7rem;
 }
 
@@ -265,6 +267,7 @@ h2 {
 
 .advantages {
   background: url("../img/advantages-bg.png") center no-repeat;
+  background-size: cover;
   padding-bottom: 16.6rem;
 }
 
@@ -315,6 +318,7 @@ h2 {
 
 .stat {
   background: url("../img/stat-bg.png") center no-repeat;
+  background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: -webkit-box;
@@ -341,8 +345,21 @@ h2 {
 
 .results {
   background: url("../img/results/bg.png") center no-repeat;
+  background-size: cover;
   padding-top: 20rem;
   padding-bottom: 20rem;
+  position: relative;
+}
+
+.results:after {
+  content: '';
+  position: absolute;
+  bottom: 160px;
+  right: -130px;
+  width: 609px;
+  height: 736px;
+  z-index: -1;
+  background: url("../img/results/man.png") center no-repeat;
 }
 
 .results__wrapper {
@@ -432,6 +449,252 @@ h2 {
   transform: translate(0, 0);
   width: 23px;
   height: auto;
+}
+
+.referal {
+  background: url("../img/referal/bg.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.referal__container {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.referal__btn {
+  margin-top: 10rem;
+}
+
+.row-one,
+.row-two,
+.row-three,
+.row-four,
+.row-five {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.row-one__users,
+.row-two__users,
+.row-three__users,
+.row-four__users,
+.row-five__users {
+  width: auto;
+  z-index: 1;
+}
+
+.row-one__arrows,
+.row-two__arrows,
+.row-three__arrows,
+.row-four__arrows,
+.row-five__arrows {
+  display: block;
+  position: relative;
+  width: auto;
+}
+
+.row-one__comment,
+.row-two__comment,
+.row-three__comment,
+.row-four__comment,
+.row-five__comment {
+  position: absolute;
+  font-size: 2.8rem;
+  width: 110%;
+  -webkit-transform: translate(100%, -50%);
+  transform: translate(100%, -50%);
+  top: 50%;
+}
+
+.row-one__users {
+  height: 77px;
+}
+
+.row-one__arrows {
+  top: -20px;
+  height: 55px;
+}
+
+.row-one__comment {
+  right: 30%;
+}
+
+.row-two__users {
+  height: 55px;
+}
+
+.row-two__arrows {
+  top: -10px;
+}
+
+.row-two__comment {
+  right: 20%;
+}
+
+.row-three__users {
+  height: 50px;
+}
+
+.row-three__arrows {
+  top: -7px;
+}
+
+.row-three__comment {
+  right: 10%;
+}
+
+.row-four__users {
+  height: 36px;
+}
+
+.row-four__arrows {
+  top: -9px;
+}
+
+.row-four__comment {
+  right: 2%;
+}
+
+.row-five__users {
+  height: 32px;
+}
+
+.row-five__arrows {
+  display: block;
+}
+
+.tariffs {
+  background: url("../img/tariffs-bg.png") center no-repeat;
+  background-size: cover;
+}
+
+.tariffs__subtitle {
+  max-width: 804px;
+}
+
+.tariffs-cards {
+  margin-top: 9.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tariffs-cards__item {
+  max-width: 249px;
+  min-height: 278px;
+  border: 2px solid #0be7ab;
+  background-color: #1c3d4e;
+  padding: 2.5rem 2.8rem;
+  margin-right: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.tariffs-cards__item:last-child {
+  margin-right: 0;
+}
+
+.tariffs-cards__item--large {
+  max-width: 263px;
+  border: 4px solid #0be7ab;
+  background-color: #1c3d4e;
+}
+
+.tariffs-cards__sub {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.tariffs-cards__sub--large {
+  font-size: 18px;
+}
+
+.tariffs-cards__text {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5rem;
+}
+
+.tariffs-cards__text--large {
+  font-size: 18px;
+}
+
+.tariffs-cards__title {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.tariffs-cards__title--large {
+  font-size: 3.6rem;
+}
+
+.tariffs-cards__btn {
+  max-width: 193px;
+  height: 45px;
+  background-color: #fe7201;
+  margin-top: 2.1rem;
+  font-size: 16px;
+}
+
+.tariffs-cards__btn--large {
+  font-size: 17px;
+  background-color: #fe6001;
+  background-image: linear-gradient(-51deg, #fbb203 0%, #fe7e01 100%);
+  max-width: 203px;
+  height: 46px;
+}
+
+.contacts {
+  background: url("../img/contacts/bg.png") top no-repeat;
+  background-size: cover;
+}
+
+.contacts__container {
+  margin-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contacts__item {
+  margin-right: 5rem;
+}
+
+.contacts__item:last-child {
+  margin-right: 0;
 }
 
 @media screen and (min-width: 448px) {
