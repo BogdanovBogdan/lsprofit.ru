@@ -328,6 +328,8 @@ h2 {
 .stat__num,
 .stat__wrapper {
   opacity: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
   font-size: 2.6rem;
   font-family: "MullerExtraBold", "Roboto";
   font-weight: bold;
