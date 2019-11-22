@@ -497,9 +497,8 @@ h2 {
   position: absolute;
   font-size: 2.8rem;
   width: 110%;
-  -webkit-transform: translate(100%, -50%);
-  transform: translate(100%, -50%);
-  top: 50%;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .row-one__users {
@@ -519,6 +518,7 @@ h2 {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
   right: 30%;
+  top: 25%;
 }
 
 .row-two__users {
@@ -536,6 +536,7 @@ h2 {
 .row-two__comment {
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
+  top: 15%;
   right: 20%;
 }
 
@@ -554,6 +555,7 @@ h2 {
 .row-three__comment {
   -webkit-animation-delay: 3.5s;
   animation-delay: 3.5s;
+  top: 10%;
   right: 10%;
 }
 
