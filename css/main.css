@@ -518,7 +518,7 @@ h2 {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
   right: 30%;
-  top: 25%;
+  top: 15%;
 }
 
 .row-two__users {
@@ -536,7 +536,7 @@ h2 {
 .row-two__comment {
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
-  top: 15%;
+  top: 10%;
   right: 20%;
 }
 
@@ -555,7 +555,7 @@ h2 {
 .row-three__comment {
   -webkit-animation-delay: 3.5s;
   animation-delay: 3.5s;
-  top: 10%;
+  top: 5%;
   right: 10%;
 }
 
