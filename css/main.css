@@ -227,18 +227,7 @@ h2 {
 .header-wrapper {
   margin-top: 19rem;
   position: relative;
-}
-
-.header-wrapper:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -32px;
-  width: 100px;
-  height: 160px;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  background: url("../img/header/eth.png");
+  z-index: 1;
 }
 
 .header__title--orange {
@@ -726,6 +715,31 @@ h2 {
 
 .contacts__item:last-child {
   margin-right: 0;
+}
+
+.scene {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.layer {
+  position: absolute;
+  top: 20px;
+  left: -132px;
+  z-index: 0;
+}
+
+.layer-eth {
+  background: url("../img/header/eth.png") center no-repeat;
+  height: 160px;
+  width: 100px;
 }
 
 @media screen and (min-width: 448px) {
