@@ -108,8 +108,8 @@ h2 {
   right: 0;
   width: 127px;
   height: 126px;
-  -webkit-transform: translate(80%, -25%);
-  transform: translate(80%, -25%);
+  -webkit-transform: translate(80%, -30%);
+  transform: translate(80%, -30%);
   background: url("../img/title-decoration.png");
 }
 
@@ -316,10 +316,25 @@ h2 {
   text-align: center;
 }
 
-.stat__num {
+.stat__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.stat__num,
+.stat__wrapper {
+  opacity: 0;
   font-size: 2.6rem;
   font-family: "MullerExtraBold", "Roboto";
   font-weight: bold;
+}
+
+.stat__num--dollar {
+  margin-left: 6px;
 }
 
 .stat__act {
@@ -595,7 +610,7 @@ h2 {
 }
 
 .tariffs {
-  background: url("../img/tariffs-bg.png") center no-repeat;
+  background: url("../img/tariffs-bg.png") bottom no-repeat;
   background-size: cover;
 }
 
