@@ -76,10 +76,9 @@ h2 {
   margin: 0;
 }
 
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: auto;
+.main {
+  background: url("../img/main-bg.jpg") top no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -248,8 +247,6 @@ h2 {
 }
 
 .advantages {
-  background: url("../img/advantages-bg.png") center no-repeat;
-  background-size: cover;
   padding-bottom: 16.6rem;
 }
 
@@ -345,8 +342,6 @@ h2 {
 }
 
 .results {
-  background: url("../img/results/bg.png") center no-repeat;
-  background-size: cover;
   padding-top: 20rem;
   padding-bottom: 20rem;
   position: relative;
@@ -451,10 +446,40 @@ h2 {
   height: auto;
 }
 
-.referal {
-  background: url("../img/referal/bg.png") center no-repeat;
-  background-size: cover;
+.indicator {
+  padding-top: 165px;
+  padding-bottom: 70px;
+}
+
+.indicator__overlay {
+  margin: 11rem auto 0;
+  width: 1140px;
+  height: 623px;
+  background: url("../img/indicator/overlay.jpg");
   position: relative;
+}
+
+.indicator__candle {
+  position: absolute;
+}
+
+.indicator__candle--one {
+  width: 69px;
+  height: 274px;
+  bottom: 17px;
+  left: 55px;
+}
+
+.indicator__text {
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.indicator__btn {
+  margin-top: 10rem;
 }
 
 .referal__container {
@@ -611,11 +636,6 @@ h2 {
   animation-delay: 5.5s;
 }
 
-.tariffs {
-  background: url("../img/tariffs-bg.png") bottom no-repeat;
-  background-size: cover;
-}
-
 .tariffs__subtitle {
   max-width: 804px;
 }
@@ -709,11 +729,6 @@ h2 {
   background-image: linear-gradient(-51deg, #fbb203 0%, #fe7e01 100%);
   max-width: 203px;
   height: 46px;
-}
-
-.contacts {
-  background: url("../img/contacts/bg.png") top no-repeat;
-  background-size: cover;
 }
 
 .contacts__container {
