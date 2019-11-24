@@ -9,8 +9,8 @@
 	<link rel="shortcut icon" href="../favikon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic" rel="stylesheet">
 
-	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -147,7 +147,25 @@
 		<section class="indicator">
 			<h2 class="title indicator__title wow bounceInLeft">Пример работы индикатора</h2>
 			<div class="indicator__overlay">
-				<img src="img/indicator/1.png" alt="candle.png" class="indicator__candle indicator__candle--one">
+				<img src="img/indicator/1.png" alt="candle.png" class="indicator__candle indicator__candle--one" data-aos="fade-up">
+				<img src="img/indicator/2.png" alt="candle.png" class="indicator__candle indicator__candle--two" data-aos="fade-up">
+				<img src="img/indicator/3.png" alt="candle.png" class="indicator__candle indicator__candle--three" data-aos="fade-up">
+				<img src="img/indicator/4.png" alt="candle.png" class="indicator__candle indicator__candle--four" data-aos="fade-up">
+				<div class="indicator__wrapper indicator__wrapper--first" data-aos="zoom-in">
+					<div class="indicator__sell">sell</div>
+					<div class="indicator__sell--comment">Продаем при выходе сигнала <span class="indicator__sell--uppercase">sell</span></div>
+				</div>
+				<img src="img/indicator/5.png" alt="candle.png" class="indicator__candle indicator__candle--five" data-aos="fade-up">
+				<div class="indicator__wrapper indicator__wrapper--second" data-aos="zoom-in">
+					<div class="indicator__take">Take profit</div>
+					<div class="indicator__take indicator__take--comment">Закрываем сделку</div>
+				</div>
+				<img src="img/indicator/6.png" alt="candle.png" class="indicator__candle indicator__candle--six" data-aos="fade-up">
+				<img src="img/indicator/7.png" alt="candle.png" class="indicator__candle indicator__candle--seven" data-aos="fade-up">
+				<img src="img/indicator/8.png" alt="candle.png" class="indicator__candle indicator__candle--eight" data-aos="fade-up">
+				<img src="img/indicator/9.png" alt="candle.png" class="indicator__candle indicator__candle--nine" data-aos="fade-up">
+				<img src="img/indicator/10.png" alt="candle.png" class="indicator__candle indicator__candle--ten" data-aos="fade-up">
+				<img src="img/indicator/11.png" alt="candle.png" class="indicator__candle indicator__candle--eleven" data-aos="fade-up">
 			</div>
 			<div class="indicator__text">На этом этапе мы заработали 30 %</div>
 			<div class="btn-center"><button class="indicator__btn">Узнать подробнее</button></div>
@@ -277,15 +295,14 @@
 
 
 
-	<script
-	src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	crossorigin="anonymous"></script>
+	<script	src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="js/wow.min.js" ></script>
-	<script>
-		new WOW().init();
-	</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/parallax.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		new WOW().init();
+		AOS.init();
+	</script>
 </body>
 </html>
