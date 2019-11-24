@@ -222,7 +222,7 @@ h2 {
 }
 
 .header {
-  background: url("../img/header/bg.jpg") top no-repeat;
+  background: url("../img/header/bg.png") top no-repeat;
   background-size: cover;
   padding-top: 7rem;
 }
