@@ -81,6 +81,10 @@ h2 {
   background-size: cover;
 }
 
+.main__wrapper {
+  position: relative;
+}
+
 .title {
   position: relative;
   display: inline-block;
@@ -246,12 +250,27 @@ h2 {
   animation-delay: 2s;
 }
 
+.header__eth {
+  top: 20px;
+  left: -132px;
+  background: url("../img/header/eth.png") center no-repeat;
+  height: 160px;
+  width: 100px;
+}
+
 .advantages {
   padding-bottom: 16.6rem;
+  position: relative;
+  z-index: 1;
 }
 
 .advantages__btn {
   margin-top: 13.8rem;
+}
+
+.advantages__btc {
+  bottom: 20px;
+  right: 80px;
 }
 
 .container-cards {
@@ -307,6 +326,13 @@ h2 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  z-index: 1;
+  position: relative;
+}
+
+.stat__btc {
+  left: -40px;
+  bottom: -29px;
 }
 
 .stat__box {
@@ -347,17 +373,6 @@ h2 {
   position: relative;
 }
 
-.results:after {
-  content: '';
-  position: absolute;
-  bottom: 160px;
-  right: -130px;
-  width: 609px;
-  height: 736px;
-  z-index: -1;
-  background: url("../img/results/man.png") center no-repeat;
-}
-
 .results__wrapper {
   margin-top: 7.6rem;
   display: -webkit-box;
@@ -369,6 +384,8 @@ h2 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  z-index: 1;
+  position: relative;
 }
 
 .results__cards {
@@ -411,6 +428,15 @@ h2 {
   margin-top: 13.8rem;
 }
 
+.man {
+  content: '';
+  position: absolute;
+  bottom: 160px;
+  right: -130px;
+  width: 609px;
+  height: 736px;
+}
+
 .embed-responsive__container {
   position: relative;
   width: 33.5%;
@@ -449,6 +475,13 @@ h2 {
 .indicator {
   padding-top: 165px;
   padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.indicator__btc {
+  top: -100px;
+  left: -60px;
 }
 
 .indicator__overlay {
@@ -514,8 +547,8 @@ h2 {
   height: 237px;
   bottom: 109px;
   left: 300px;
-  -webkit-transition-delay: 2s;
-  transition-delay: 2s;
+  -webkit-transition-delay: 3s;
+  transition-delay: 3s;
 }
 
 .indicator__candle--six {
@@ -523,8 +556,8 @@ h2 {
   height: 229px;
   bottom: 192px;
   left: 390px;
-  -webkit-transition-delay: 2.5s;
-  transition-delay: 2.5s;
+  -webkit-transition-delay: 4.5s;
+  transition-delay: 4.5s;
 }
 
 .indicator__candle--seven {
@@ -532,8 +565,8 @@ h2 {
   height: 96px;
   bottom: 357px;
   left: 456px;
-  -webkit-transition-delay: 3s;
-  transition-delay: 3s;
+  -webkit-transition-delay: 5s;
+  transition-delay: 5s;
 }
 
 .indicator__candle--eight {
@@ -541,8 +574,8 @@ h2 {
   height: 309px;
   bottom: 366px;
   left: 479px;
-  -webkit-transition-delay: 3.5s;
-  transition-delay: 3.5s;
+  -webkit-transition-delay: 5.5s;
+  transition-delay: 5.5s;
 }
 
 .indicator__candle--nine {
@@ -550,8 +583,8 @@ h2 {
   height: 312px;
   bottom: 365px;
   left: 706px;
-  -webkit-transition-delay: 4s;
-  transition-delay: 4s;
+  -webkit-transition-delay: 6s;
+  transition-delay: 6s;
 }
 
 .indicator__candle--ten {
@@ -559,8 +592,8 @@ h2 {
   height: 320px;
   bottom: 210px;
   left: 797px;
-  -webkit-transition-delay: 4.5s;
-  transition-delay: 4.5s;
+  -webkit-transition-delay: 6.5s;
+  transition-delay: 6.5s;
 }
 
 .indicator__candle--eleven {
@@ -568,8 +601,8 @@ h2 {
   height: 382px;
   bottom: 6px;
   left: 887px;
-  -webkit-transition-delay: 5s;
-  transition-delay: 5s;
+  -webkit-transition-delay: 7s;
+  transition-delay: 7s;
 }
 
 .indicator__text {
@@ -598,15 +631,15 @@ h2 {
 .indicator__wrapper--first {
   bottom: 337px;
   left: 327px;
-  -webkit-transition-delay: 6s;
-  transition-delay: 6s;
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
 }
 
 .indicator__wrapper--second {
   bottom: 174px;
   left: 380px;
-  -webkit-transition-delay: 7s;
-  transition-delay: 7s;
+  -webkit-transition-delay: 3.5s;
+  transition-delay: 3.5s;
 }
 
 .indicator__sell {
@@ -830,6 +863,11 @@ h2 {
   max-width: 804px;
 }
 
+.tariffs__btc {
+  top: -80px;
+  left: -80px;
+}
+
 .tariffs-cards {
   margin-top: 9.4rem;
   display: -webkit-box;
@@ -841,6 +879,8 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .tariffs-cards__item {
@@ -949,21 +989,18 @@ h2 {
   right: 0;
   height: 100%;
   width: 100%;
-  min-height: 100vh;
   z-index: -1;
 }
 
 .layer {
   position: absolute;
-  top: 20px;
-  left: -132px;
-  z-index: 0;
+  z-index: -1;
 }
 
-.layer-eth {
-  background: url("../img/header/eth.png") center no-repeat;
-  height: 160px;
-  width: 100px;
+.layer-btc {
+  width: 136px;
+  height: 136px;
+  background: url("../img/bitcoin.png") center no-repeat;
 }
 
 @media screen and (min-width: 448px) {
