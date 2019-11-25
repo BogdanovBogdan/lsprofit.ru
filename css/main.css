@@ -705,15 +705,31 @@ h2 {
   height: 16px;
 }
 
+.referal {
+  position: relative;
+}
+
 .referal__container {
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 .referal__btn {
   margin-top: 10rem;
+}
+
+.referal__img {
+  position: absolute;
+  width: 417px;
+  height: 446px;
+  right: -100px;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .row-one,
