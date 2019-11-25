@@ -34,9 +34,7 @@
 			<h1 class="header__title wow bounceInLeft">Как торговать, как <span class="header__title header__title--orange">успешный</span> трейдер?</h1>
 			<div class="subtitle header__subtitle wow bounceInLeft">Как давно вы мечтали заработать на бирже без особых потерь? <br>Время настало и мы рады помочь вам в этом.</div>
 			<button class="header__btn wow bounceInLeft">Узнать подробнее</button>
-			<div class="scene">
-				<div data-speed="70" class="layer layer-eth"></div>
-			</div>
+			<div data-speed="70" class="layer header__eth"></div>
 		</div>
 	</header>
 
@@ -44,7 +42,7 @@
 		
 		<section class="advantages">
 			<h2 class="title advantages__title wow bounceInLeft">Преимущества</h2>
-			
+
 			<div class="container-cards">
 				<div class="card">
 					<div class="card__icon">icon</div>
@@ -62,14 +60,15 @@
 					<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae justo ut turpis mollis consectetur. Nam a tortor turpis.</p>
 				</div>
 			</div>
-		
+			
 			<div class="btn-center">
 				<button class="advantages__btn">Узнать подробнее</button>
 			</div>
+			<div data-speed="70" class="layer layer-btc advantages__btc"></div>
 		</section>
-		
-		
+
 		<section class="stat">
+			<div data-speed="20" class="layer layer-btc stat__btc"></div>
 			<div class="stat__box">
 				<div class="stat__num counter">165</div>
 				<div class="stat__act">зарегестрировано</div>
@@ -93,30 +92,21 @@
 		
 		<section class="results">
 			<h2 class="title results__title wow bounceInLeft">Наши результаты</h2>
-		
+
 			<div class="results__wrapper">
 				
 				<div class="embed-responsive__container">
-					<!-- Make sure ?enablejsapi=1 is on URL -->
 					<iframe src="https://www.youtube.com/embed/5qvU9bEPd8w?enablejsapi=1&html5=1" class="embed-responsive__video" id="video"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
+
 					<div class="button" id="play-button">
 						<img src="img/results/play.png" >
 					</div>
-		
+
 					<div class="button" id="pause-button">
 						<img src="img/results/play.png" >
 					</div>
-					<!-- <div class="buttons">
-						<img src="img/results/play.png" class="button" id="play-button">
-						</img >
-						<img src="img/results/play.png" class="button" id="pause-button">
-						</img >
-					</div> -->
-		
-					<!-- <div id="videoPlayBtn" class="videoPlayBtn"><img src="img/results/play.png"></div> -->
 				</div>
-		
+
 				<div class="results__cards">
 					<div class="results__card">
 						<img src="img/results/pos-1.png" class="results__img" alt="Your position #1">
@@ -138,15 +128,18 @@
 					</div>
 				</div>
 			</div>
-		
+
 			<div class="btn-center">
 				<button class="results__btn">Узнать подробнее</button>
 			</div>
+
+			<img src="img/results/man.png" alt="png" class="man" data-1740="right: -550px;" data-2340="right: -150px;">
 		</section>
 		
 		<section class="indicator">
 			<h2 class="title indicator__title wow bounceInLeft">Пример работы индикатора</h2>
 			<div class="indicator__overlay">
+				<div data-speed="50" class="layer layer-btc indicator__btc"></div>
 				<img src="img/indicator/1.png" alt="candle.png" class="indicator__candle indicator__candle--one" data-aos="fade-up">
 				<img src="img/indicator/2.png" alt="candle.png" class="indicator__candle indicator__candle--two" data-aos="fade-up">
 				<img src="img/indicator/3.png" alt="candle.png" class="indicator__candle indicator__candle--three" data-aos="fade-up">
@@ -183,31 +176,31 @@
 						<img src="img/referal/two-arrows.png" alt="two-arrows.png" class="row-one__arrows wow fadeIn">
 						<div class="row-one__comment wow fadeIn">-10% от покупки Вашего реферала</div>
 					</div>
-		
+
 					<div class="row-two">
 						<img src="img/referal/two-users.png" alt="user.png" class="row-two__users wow fadeInUp">
 						<img src="img/referal/four-arrows.png" alt="arrows.png" class="row-two__arrows wow fadeIn">
 						<div class="row-two__comment wow fadeIn">-7% от покупки Вашего реферала</div>
 					</div>
-		
+
 					<div class="row-three">
 						<img src="img/referal/four-users.png" alt="user.png" class="row-three__users wow fadeInUp">
 						<img src="img/referal/four2-arrows.png" alt="arrows.png" class="row-three__arrows wow fadeIn">
 						<div class="row-three__comment wow fadeIn">- 5% от покупки Вашего реферала</div>
 					</div>
-		
+
 					<div class="row-four">
 						<img src="img/referal/four-users-smaller.png" alt="user.png" class="row-four__users wow fadeInUp">
 						<img src="img/referal/eight-arrows.png" alt="arrows.png" class="row-four__arrows wow fadeIn">
 						<div class="row-four__comment wow fadeIn">-3 % от покупки Вашего реферала</div>
 					</div>
-		
+
 					<div class="row-five">
 						<img src="img/referal/eight-users.png" alt="user.png" class="row-five__users wow fadeInUp">
 						<div class="row-five__comment wow fadeIn">-2% от покупки Вашего реферала</div>
 					</div>
 				</div>
-		
+
 			</div>
 			<!-- /.referal__container -->
 			<div class="btn-center">
@@ -223,6 +216,7 @@
 			<div class="subtitle tariffs__subtitle">При покупке тарифа из предложенных ниже, вам будет предоставлен доступ к нашему индикатору на TradingView.</div>
 			<!-- /.tariffs__subtitle -->
 			<div class="tariffs-cards">
+				<div data-speed="30" class="layer layer-btc tariffs__btc"></div>
 				<div class="tariffs-cards__item">
 					<div class="up">
 						<div class="tariffs-cards__sup">Демо</div>
@@ -293,6 +287,13 @@
 	</main>
 
 
+	<!-- счетчик пикселей от верха экрана pixel counter from the top of the screen -->
+	<div id="show-scroll" style="color: #fff; padding: 10px; position: fixed; top: 5%; left:5%; background: rgba(0,0,0,.7); border-radius: 5px; z-index: 10;">0</div>
+	<script>
+		window.addEventListener('scroll', function() {
+		  document.querySelector('#show-scroll').textContent = pageYOffset + 'px';
+		});
+	</script>
 
 
 	<script	src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -300,7 +301,9 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/parallax.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/skrollr.min.js"></script>
 	<script>
+		var s = skrollr.init();
 		new WOW().init();
 		AOS.init();
 	</script>

@@ -1,3 +1,4 @@
+
 // start the counter, when the animated element go up to top window
 
 $(document).ready(function() {
@@ -5,7 +6,7 @@ $(document).ready(function() {
 	$(window).on("scroll", function(){
 
 		if(!show) {return false;} 
-															
+
 		let wTop = $(window).scrollTop(); 
 		let eTop = $(".stat").offset().top; 
 
