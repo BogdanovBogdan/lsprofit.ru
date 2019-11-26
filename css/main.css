@@ -76,15 +76,6 @@ h2 {
   margin: 0;
 }
 
-.main {
-  background: url("../img/main-bg.jpg") top no-repeat;
-  background-size: cover;
-}
-
-.main__wrapper {
-  position: relative;
-}
-
 .title {
   position: relative;
   display: inline-block;
@@ -259,6 +250,8 @@ h2 {
 }
 
 .advantages {
+  background: url("../img/advantages/bg.png");
+  background-size: cover;
   padding-bottom: 16.6rem;
   position: relative;
   z-index: 1;
@@ -368,6 +361,8 @@ h2 {
 }
 
 .results {
+  background: url("../img/results/bg.png") center no-repeat;
+  background-size: cover;
   padding-top: 20rem;
   padding-bottom: 20rem;
   position: relative;
@@ -398,6 +393,7 @@ h2 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 52.3%;
+  position: relative;
 }
 
 .results__card {
@@ -425,14 +421,14 @@ h2 {
 }
 
 .results__btn {
-  margin-top: 13.8rem;
+  margin-top: 5rem;
 }
 
 .man {
   content: '';
   position: absolute;
-  bottom: 160px;
-  right: -130px;
+  bottom: 0px;
+  right: -260px;
   width: 609px;
   height: 736px;
 }
@@ -473,6 +469,8 @@ h2 {
 }
 
 .indicator {
+  background: url("../img/indicator/bg.png") center no-repeat;
+  background-size: cover;
   padding-top: 165px;
   padding-bottom: 70px;
   position: relative;
@@ -496,43 +494,84 @@ h2 {
   position: absolute;
 }
 
-.indicator__candle--one {
-  width: 69px;
-  height: 274px;
-  bottom: 17px;
+.indicator__candle--1 {
+  width: 20px;
+  height: 138px;
+  bottom: 94px;
   left: 55px;
 }
 
-.indicator__candle--two {
-  width: 63px;
-  height: 228px;
+.indicator__candle--2 {
+  width: 17px;
+  height: 204px;
+  bottom: 17px;
+  left: 80px;
+}
+
+.indicator__candle--3 {
+  width: 18px;
+  height: 218px;
+  bottom: 73px;
+  left: 101px;
+}
+
+.indicator__candle--4 {
+  width: 17px;
+  height: 136px;
+  bottom: 171px;
+  left: 124px;
+}
+
+.indicator__candle--5 {
+  width: 16px;
+  height: 138px;
   bottom: 127px;
-  left: 123px;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-  -webkit-transition-duration: 3s;
-  transition-duration: 3s;
+  left: 147px;
 }
 
-.indicator__candle--three {
-  width: 44px;
-  height: 300px;
+.indicator__candle--6 {
+  width: 15px;
+  height: 210px;
+  bottom: 147PX;
+  left: 171px;
+}
+
+.indicator__candle--7 {
+  width: 23px;
+  height: 214px;
   bottom: 115px;
-  left: 189px;
-  -webkit-transition-delay: 1s;
-  transition-delay: 1s;
+  left: 190px;
 }
 
-.indicator__candle--four {
-  width: 61px;
-  height: 333px;
-  bottom: 156px;
-  left: 237px;
-  -webkit-transition-delay: 1.5s;
-  transition-delay: 1.5s;
+.indicator__candle--8 {
+  width: 28px;
+  height: 134px;
+  bottom: 241px;
+  left: 209px;
 }
 
-.indicator__candle--four:after {
+.indicator__candle--9 {
+  width: 20px;
+  height: 213px;
+  bottom: 276px;
+  left: 236px;
+}
+
+.indicator__candle--10 {
+  width: 25px;
+  height: 122px;
+  bottom: 263px;
+  left: 253px;
+}
+
+.indicator__candle--11 {
+  width: 21px;
+  height: 228px;
+  bottom: 155px;
+  left: 279px;
+}
+
+.indicator__candle--11:after {
   content: '';
   width: 36px;
   height: 8px;
@@ -542,67 +581,242 @@ h2 {
   left: 291px;
 }
 
-.indicator__candle--five {
-  width: 92px;
-  height: 237px;
-  bottom: 109px;
-  left: 300px;
-  -webkit-transition-delay: 3s;
-  transition-delay: 3s;
-}
-
-.indicator__candle--six {
-  width: 67px;
-  height: 229px;
-  bottom: 192px;
-  left: 390px;
-  -webkit-transition-delay: 4.5s;
-  transition-delay: 4.5s;
-}
-
-.indicator__candle--seven {
+.indicator__candle--12 {
   width: 24px;
-  height: 96px;
-  bottom: 357px;
+  height: 192px;
+  bottom: 154px;
+  left: 300px;
+}
+
+.indicator__candle--13 {
+  width: 19px;
+  height: 98px;
+  bottom: 187px;
+  left: 324px;
+}
+
+.indicator__candle--14 {
+  width: 18px;
+  height: 148px;
+  bottom: 111px;
+  left: 347px;
+}
+
+.indicator__candle--15 {
+  width: 20px;
+  height: 161px;
+  bottom: 153px;
+  left: 371px;
+}
+
+.indicator__candle--16 {
+  width: 25px;
+  height: 179px;
+  bottom: 199px;
+  left: 389px;
+}
+
+.indicator__candle--17 {
+  width: 22px;
+  height: 204px;
+  bottom: 196px;
+  left: 414px;
+}
+
+.indicator__candle--18 {
+  width: 17px;
+  height: 222px;
+  bottom: 199px;
+  left: 439px;
+}
+
+.indicator__candle--19 {
+  width: 24px;
+  height: 93px;
+  bottom: 360px;
   left: 456px;
-  -webkit-transition-delay: 5s;
-  transition-delay: 5s;
 }
 
-.indicator__candle--eight {
-  width: 220px;
-  height: 309px;
-  bottom: 366px;
-  left: 479px;
-  -webkit-transition-delay: 5.5s;
-  transition-delay: 5.5s;
+.indicator__candle--20 {
+  width: 27px;
+  height: 203px;
+  bottom: 369px;
+  left: 500px;
 }
 
-.indicator__candle--nine {
-  width: 86px;
-  height: 312px;
-  bottom: 365px;
+.indicator__candle--21 {
+  width: 30px;
+  height: 202px;
+  bottom: 443px;
+  left: 524px;
+}
+
+.indicator__candle--22 {
+  width: 23px;
+  height: 216px;
+  bottom: 424px;
+  left: 566px;
+}
+
+.indicator__candle--23 {
+  width: 15px;
+  height: 78px;
+  bottom: 516px;
+  left: 594px;
+}
+
+.indicator__candle--24 {
+  width: 16px;
+  height: 189px;
+  bottom: 420px;
+  left: 617px;
+}
+
+.indicator__candle--25 {
+  width: 18px;
+  height: 213px;
+  bottom: 465px;
+  left: 637px;
+}
+
+.indicator__candle--26 {
+  width: 17px;
+  height: 230px;
+  bottom: 447px;
+  left: 660px;
+}
+
+.indicator__candle--27 {
+  width: 16px;
+  height: 117px;
+  bottom: 546px;
+  left: 683px;
+}
+
+.indicator__candle--28 {
+  width: 18px;
+  height: 158px;
+  bottom: 519px;
   left: 706px;
-  -webkit-transition-delay: 6s;
-  transition-delay: 6s;
 }
 
-.indicator__candle--ten {
-  width: 65px;
-  height: 320px;
-  bottom: 210px;
-  left: 797px;
-  -webkit-transition-delay: 6.5s;
-  transition-delay: 6.5s;
+.indicator__candle--29 {
+  width: 14px;
+  height: 250px;
+  bottom: 391px;
+  left: 729px;
 }
 
-.indicator__candle--eleven {
-  width: 245px;
-  height: 382px;
-  bottom: 6px;
-  left: 887px;
-  -webkit-transition-delay: 7s;
-  transition-delay: 7s;
+.indicator__candle--30 {
+  width: 21px;
+  height: 153px;
+  bottom: 366px;
+  left: 748px;
+}
+
+.indicator__candle--31 {
+  width: 18px;
+  height: 142px;
+  bottom: 398px;
+  left: 772px;
+}
+
+.indicator__candle--32 {
+  width: 20px;
+  height: 268px;
+  bottom: 249px;
+  left: 792px;
+}
+
+.indicator__candle--33 {
+  width: 18px;
+  height: 208px;
+  bottom: 319px;
+  left: 814px;
+}
+
+.indicator__candle--34 {
+  width: 23px;
+  height: 219px;
+  bottom: 215px;
+  left: 837px;
+}
+
+.indicator__candle--35 {
+  width: 20px;
+  height: 101px;
+  bottom: 192px;
+  left: 883px;
+}
+
+.indicator__candle--36 {
+  width: 16px;
+  height: 102px;
+  bottom: 132px;
+  left: 907px;
+}
+
+.indicator__candle--37 {
+  width: 15px;
+  height: 255px;
+  bottom: 5px;
+  left: 930px;
+}
+
+.indicator__candle--38 {
+  width: 16px;
+  height: 246px;
+  bottom: 53px;
+  left: 952px;
+}
+
+.indicator__candle--39 {
+  width: 17px;
+  height: 123px;
+  bottom: 133px;
+  left: 974px;
+}
+
+.indicator__candle--40 {
+  width: 17px;
+  height: 116px;
+  bottom: 209px;
+  left: 996px;
+}
+
+.indicator__candle--41 {
+  width: 25px;
+  height: 114px;
+  bottom: 232px;
+  left: 1018px;
+}
+
+.indicator__candle--42 {
+  width: 12px;
+  height: 106px;
+  bottom: 243px;
+  left: 1044px;
+}
+
+.indicator__candle--43 {
+  width: 19px;
+  height: 120px;
+  bottom: 225px;
+  left: 1063px;
+}
+
+.indicator__candle--44 {
+  width: 17px;
+  height: 203px;
+  bottom: 170px;
+  left: 1086px;
+}
+
+.indicator__candle--45 {
+  width: 26px;
+  height: 230px;
+  bottom: 78px;
+  left: 1106px;
 }
 
 .indicator__text {
@@ -706,6 +920,8 @@ h2 {
 }
 
 .referal {
+  background: url("../img/referal/bg.png") center no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -873,6 +1089,11 @@ h2 {
 .row-five__comment {
   -webkit-animation-delay: 5.5s;
   animation-delay: 5.5s;
+}
+
+.tariffs {
+  background: url("../img/contacts/bg.png") center no-repeat;
+  background-size: cover;
 }
 
 .tariffs__subtitle {

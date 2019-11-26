@@ -1,3 +1,59 @@
+// //	screen scroll delay
+
+// const results = document.querySelector('.results');
+// console.log(results);
+
+// const indicator = document.querySelector('.indicator');
+// console.log(indicator);
+
+
+// const controller = ScrollMagic.Controller();
+
+// const scene = new ScrollMagic.Scene({
+// 	duration: 2000,
+// 	triggerElement: indicator,
+// 	triggerHook: 0
+// })
+// 	.addIndicators()
+// 	.setPin(indicator)
+// 	.addTo(controller);
+
+const results = document.querySelector(".results");
+const indicator = document.querySelector(".indicator");
+const referal = document.querySelector(".referal");
+
+
+//SCROLLMAGIC
+const controller = new ScrollMagic.Controller();
+
+const sceneOne = new ScrollMagic.Scene({
+	duration: 3800,
+	triggerElement: results,
+	triggerHook: -0.1,
+	offset: 170
+})
+	.setPin(results)
+	.addTo(controller);
+
+const sceneTwo = new ScrollMagic.Scene({
+	duration: 3000,
+	triggerElement: indicator,
+	triggerHook: 0,
+	offset: 140
+})
+	.setPin(indicator)
+	.addTo(controller);
+
+const sceneThree = new ScrollMagic.Scene({
+	duration: 3000,
+	triggerElement: referal,
+	triggerHook: 0,
+	offset: 70
+})
+	.setPin(referal)
+	.addTo(controller);
+
+
 
 // start the counter, when the animated element go up to top window
 
