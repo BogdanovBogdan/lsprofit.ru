@@ -27,25 +27,25 @@ const referal = document.querySelector(".referal");
 const controller = new ScrollMagic.Controller();
 
 const sceneOne = new ScrollMagic.Scene({
-	duration: 3800,
+	duration: 3000,
 	triggerElement: results,
-	triggerHook: -0.1,
+	triggerHook: 0,
 	offset: 170
 })
 	.setPin(results)
 	.addTo(controller);
 
 const sceneTwo = new ScrollMagic.Scene({
-	duration: 3000,
+	duration: 11600,
 	triggerElement: indicator,
-	triggerHook: 0,
-	offset: 140
+	triggerHook: 1,
+	offset: 920
 })
 	.setPin(indicator)
 	.addTo(controller);
 
 const sceneThree = new ScrollMagic.Scene({
-	duration: 3000,
+	duration: 2300,
 	triggerElement: referal,
 	triggerHook: 0,
 	offset: 70

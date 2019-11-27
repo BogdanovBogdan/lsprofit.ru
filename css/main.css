@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *,
 ::after,
 ::before {
@@ -160,6 +162,42 @@ h2 {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?7zwu63");
+  src: url("../fonts/icomoon.eot?7zwu63#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?7zwu63") format("truetype"), url("../fonts/icomoon.woff?7zwu63") format("woff"), url("../fonts/icomoon.svg?7zwu63#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-authentication:before {
+  content: "";
+}
+
+.icon-kpi:before {
+  content: "";
+}
+
+.icon-seo:before {
+  content: "";
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,6 +234,10 @@ h2 {
   margin-right: 8rem;
 }
 
+.nav-links__link:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .nav-enter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,21 +266,26 @@ h2 {
   z-index: 1;
 }
 
+.header__title {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
 .header__title--orange {
   color: #fe6001;
 }
 
 .header__subtitle {
   margin-top: 5rem;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
 }
 
 .header__btn {
   margin: 9.6rem 0 22.1rem;
   background-color: #fe6001;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .header__eth {
@@ -247,6 +294,11 @@ h2 {
   background: url("../img/header/eth.png") center no-repeat;
   height: 160px;
   width: 100px;
+}
+
+.header__btc {
+  bottom: 254px;
+  right: 100px;
 }
 
 .advantages {
@@ -306,6 +358,15 @@ h2 {
 
 .card__text {
   margin-top: 3px;
+}
+
+.icon-kpi,
+.icon-seo {
+  font-size: 8rem;
+}
+
+.icon-authentication {
+  font-size: 8.8rem;
 }
 
 .stat {
@@ -421,7 +482,7 @@ h2 {
 }
 
 .results__btn {
-  margin-top: 5rem;
+  margin-top: 13.8rem;
 }
 
 .man {
@@ -477,16 +538,21 @@ h2 {
   z-index: 1;
 }
 
+.indicator__animation {
+  background: url("../img/indicator/bg.png") center no-repeat;
+  background-size: cover;
+}
+
 .indicator__btc {
   top: -100px;
   left: -60px;
 }
 
 .indicator__overlay {
-  margin: 11rem auto 0;
-  width: 1140px;
-  height: 623px;
-  background: url("../img/indicator/overlay.jpg");
+  margin: 10rem auto 0;
+  width: 979px;
+  height: 494px;
+  background: url("../img/indicator/bg-candles.png") center no-repeat;
   position: relative;
 }
 
@@ -495,328 +561,331 @@ h2 {
 }
 
 .indicator__candle--1 {
-  width: 20px;
-  height: 138px;
-  bottom: 94px;
-  left: 55px;
+  width: 17px;
+  height: 116px;
+  bottom: 55px;
+  left: 38px;
 }
 
 .indicator__candle--2 {
-  width: 17px;
-  height: 204px;
-  bottom: 17px;
-  left: 80px;
+  width: 14px;
+  height: 172px;
+  bottom: -10px;
+  left: 59px;
 }
 
 .indicator__candle--3 {
-  width: 18px;
-  height: 218px;
-  bottom: 73px;
-  left: 101px;
+  width: 15px;
+  height: 184px;
+  bottom: 37px;
+  left: 77px;
 }
 
 .indicator__candle--4 {
-  width: 17px;
-  height: 136px;
-  bottom: 171px;
-  left: 124px;
+  width: 15px;
+  height: 184px;
+  bottom: 120px;
+  left: 96px;
 }
 
 .indicator__candle--5 {
-  width: 16px;
-  height: 138px;
-  bottom: 127px;
-  left: 147px;
+  width: 13px;
+  height: 116px;
+  bottom: 83px;
+  left: 116px;
 }
 
 .indicator__candle--6 {
-  width: 15px;
-  height: 210px;
-  bottom: 147PX;
-  left: 171px;
+  width: 12px;
+  height: 177px;
+  bottom: 100PX;
+  left: 136px;
 }
 
 .indicator__candle--7 {
-  width: 23px;
-  height: 214px;
-  bottom: 115px;
-  left: 190px;
+  width: 19px;
+  height: 180px;
+  bottom: 73px;
+  left: 152px;
 }
 
 .indicator__candle--8 {
-  width: 28px;
-  height: 134px;
-  bottom: 241px;
-  left: 209px;
+  width: 23px;
+  height: 113px;
+  bottom: 179px;
+  left: 168px;
 }
 
 .indicator__candle--9 {
-  width: 20px;
-  height: 213px;
-  bottom: 276px;
-  left: 236px;
+  width: 16px;
+  height: 179px;
+  bottom: 209px;
+  left: 191px;
 }
 
 .indicator__candle--10 {
-  width: 25px;
-  height: 122px;
-  bottom: 263px;
-  left: 253px;
+  width: 21px;
+  height: 103px;
+  bottom: 191px;
+  left: 205px;
 }
 
 .indicator__candle--11 {
-  width: 21px;
-  height: 228px;
-  bottom: 155px;
-  left: 279px;
-}
-
-.indicator__candle--11:after {
-  content: '';
-  width: 36px;
-  height: 8px;
-  background-color: #00e4ff;
-  position: absolute;
-  bottom: 355px;
-  left: 291px;
+  width: 18px;
+  height: 192px;
+  bottom: 106px;
+  left: 227px;
 }
 
 .indicator__candle--12 {
-  width: 24px;
-  height: 192px;
-  bottom: 154px;
-  left: 300px;
+  width: 20px;
+  height: 161px;
+  bottom: 106px;
+  left: 245px;
 }
 
 .indicator__candle--13 {
-  width: 19px;
-  height: 98px;
-  bottom: 187px;
-  left: 324px;
+  width: 15px;
+  height: 83px;
+  bottom: 133px;
+  left: 265px;
 }
 
 .indicator__candle--14 {
-  width: 18px;
-  height: 148px;
-  bottom: 111px;
-  left: 347px;
+  width: 15px;
+  height: 125px;
+  bottom: 69px;
+  left: 284px;
 }
 
 .indicator__candle--15 {
-  width: 20px;
-  height: 161px;
-  bottom: 153px;
-  left: 371px;
+  width: 17px;
+  height: 135px;
+  bottom: 105px;
+  left: 304px;
 }
 
 .indicator__candle--16 {
-  width: 25px;
-  height: 179px;
-  bottom: 199px;
-  left: 389px;
+  width: 21px;
+  height: 151px;
+  bottom: 143px;
+  left: 320px;
+  z-index: 1;
 }
 
 .indicator__candle--17 {
-  width: 22px;
-  height: 204px;
-  bottom: 196px;
-  left: 414px;
+  width: 18px;
+  height: 172px;
+  bottom: 141px;
+  left: 341px;
+  z-index: 1;
 }
 
 .indicator__candle--18 {
-  width: 17px;
-  height: 222px;
-  bottom: 199px;
-  left: 439px;
+  width: 14px;
+  height: 187px;
+  bottom: 143px;
+  left: 362px;
+  z-index: 1;
 }
 
 .indicator__candle--19 {
-  width: 24px;
-  height: 93px;
-  bottom: 360px;
-  left: 456px;
+  width: 20px;
+  height: 78px;
+  bottom: 279px;
+  left: 376px;
+  z-index: 1;
 }
 
 .indicator__candle--20 {
-  width: 27px;
-  height: 203px;
-  bottom: 369px;
-  left: 500px;
+  width: 23px;
+  height: 171px;
+  bottom: 287px;
+  left: 413px;
 }
 
 .indicator__candle--21 {
-  width: 30px;
-  height: 202px;
-  bottom: 443px;
-  left: 524px;
+  width: 26px;
+  height: 170px;
+  bottom: 349px;
+  left: 433px;
 }
 
 .indicator__candle--22 {
-  width: 23px;
-  height: 216px;
-  bottom: 424px;
-  left: 566px;
+  width: 19px;
+  height: 182px;
+  bottom: 333px;
+  left: 469px;
 }
 
 .indicator__candle--23 {
-  width: 15px;
-  height: 78px;
-  bottom: 516px;
-  left: 594px;
+  width: 13px;
+  height: 65px;
+  bottom: 411px;
+  left: 492px;
 }
 
 .indicator__candle--24 {
-  width: 16px;
-  height: 189px;
-  bottom: 420px;
-  left: 617px;
+  width: 13px;
+  height: 159px;
+  bottom: 330px;
+  left: 512px;
 }
 
 .indicator__candle--25 {
-  width: 18px;
-  height: 213px;
-  bottom: 465px;
-  left: 637px;
+  width: 14px;
+  height: 179px;
+  bottom: 368px;
+  left: 529px;
 }
 
 .indicator__candle--26 {
-  width: 17px;
-  height: 230px;
-  bottom: 447px;
-  left: 660px;
+  width: 14px;
+  height: 194px;
+  bottom: 352px;
+  left: 548px;
 }
 
 .indicator__candle--27 {
-  width: 16px;
-  height: 117px;
-  bottom: 546px;
-  left: 683px;
+  width: 14px;
+  height: 98px;
+  bottom: 436px;
+  left: 567px;
 }
 
 .indicator__candle--28 {
-  width: 18px;
-  height: 158px;
-  bottom: 519px;
-  left: 706px;
+  width: 15px;
+  height: 133px;
+  bottom: 413px;
+  left: 587px;
 }
 
 .indicator__candle--29 {
-  width: 14px;
-  height: 250px;
-  bottom: 391px;
-  left: 729px;
+  width: 12px;
+  height: 211px;
+  bottom: 305px;
+  left: 606px;
 }
 
 .indicator__candle--30 {
-  width: 21px;
-  height: 153px;
-  bottom: 366px;
-  left: 748px;
+  width: 18px;
+  height: 129px;
+  bottom: 284px;
+  left: 622px;
 }
 
 .indicator__candle--31 {
-  width: 18px;
-  height: 142px;
-  bottom: 398px;
-  left: 772px;
+  width: 16px;
+  height: 119px;
+  bottom: 311px;
+  left: 642px;
 }
 
 .indicator__candle--32 {
-  width: 20px;
-  height: 268px;
-  bottom: 249px;
-  left: 792px;
+  width: 17px;
+  height: 225px;
+  bottom: 186px;
+  left: 659px;
+  z-index: 1;
 }
 
 .indicator__candle--33 {
-  width: 18px;
-  height: 208px;
-  bottom: 319px;
-  left: 814px;
+  width: 16px;
+  height: 175px;
+  bottom: 245px;
+  left: 678px;
+  z-index: 1;
 }
 
 .indicator__candle--34 {
-  width: 23px;
-  height: 219px;
-  bottom: 215px;
-  left: 837px;
+  width: 20px;
+  height: 183px;
+  bottom: 158px;
+  left: 697px;
+  z-index: 1;
 }
 
 .indicator__candle--35 {
-  width: 20px;
-  height: 101px;
-  bottom: 192px;
-  left: 883px;
+  width: 16px;
+  height: 85px;
+  bottom: 138px;
+  left: 737px;
+  z-index: 1;
 }
 
 .indicator__candle--36 {
-  width: 16px;
-  height: 102px;
-  bottom: 132px;
-  left: 907px;
+  width: 14px;
+  height: 86px;
+  bottom: 87px;
+  left: 756px;
+  z-index: 1;
 }
 
 .indicator__candle--37 {
-  width: 15px;
-  height: 255px;
-  bottom: 5px;
-  left: 930px;
+  width: 12px;
+  height: 215px;
+  bottom: -20px;
+  left: 776px;
+  z-index: 1;
 }
 
 .indicator__candle--38 {
-  width: 16px;
-  height: 246px;
-  bottom: 53px;
-  left: 952px;
+  width: 14px;
+  height: 207px;
+  bottom: 20px;
+  left: 794px;
+  z-index: 1;
 }
 
 .indicator__candle--39 {
-  width: 17px;
-  height: 123px;
-  bottom: 133px;
-  left: 974px;
+  width: 14px;
+  height: 103px;
+  bottom: 88px;
+  left: 813px;
+  z-index: 1;
 }
 
 .indicator__candle--40 {
-  width: 17px;
-  height: 116px;
-  bottom: 209px;
-  left: 996px;
+  width: 15px;
+  height: 98px;
+  bottom: 152px;
+  left: 831px;
+  z-index: 1;
 }
 
 .indicator__candle--41 {
-  width: 25px;
-  height: 114px;
-  bottom: 232px;
-  left: 1018px;
+  width: 21px;
+  height: 96px;
+  bottom: 171px;
+  left: 850px;
 }
 
 .indicator__candle--42 {
-  width: 12px;
-  height: 106px;
-  bottom: 243px;
-  left: 1044px;
+  width: 10px;
+  height: 89px;
+  bottom: 181px;
+  left: 872px;
 }
 
 .indicator__candle--43 {
-  width: 19px;
-  height: 120px;
-  bottom: 225px;
-  left: 1063px;
+  width: 15px;
+  height: 101px;
+  bottom: 165px;
+  left: 888px;
 }
 
 .indicator__candle--44 {
-  width: 17px;
-  height: 203px;
-  bottom: 170px;
-  left: 1086px;
+  width: 15px;
+  height: 171px;
+  bottom: 119px;
+  left: 907px;
 }
 
 .indicator__candle--45 {
-  width: 26px;
-  height: 230px;
-  bottom: 78px;
-  left: 1106px;
+  width: 22px;
+  height: 193px;
+  bottom: 42px;
+  left: 924px;
 }
 
 .indicator__text {
@@ -824,7 +893,8 @@ h2 {
   font-weight: 300;
   letter-spacing: 1.2px;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  position: relative;
 }
 
 .indicator__btn {
@@ -833,31 +903,29 @@ h2 {
 
 .indicator__wrapper {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 2.1rem;
 }
 
 .indicator__wrapper--first {
-  bottom: 337px;
-  left: 327px;
-  -webkit-transition-delay: 2s;
-  transition-delay: 2s;
+  bottom: 257px;
+  left: 263px;
 }
 
 .indicator__wrapper--second {
-  bottom: 174px;
-  left: 380px;
-  -webkit-transition-delay: 3.5s;
-  transition-delay: 3.5s;
+  bottom: 107px;
+  left: 314px;
 }
 
 .indicator__sell {
   text-transform: uppercase;
+  font-size: 1.9rem;
   width: 118px;
   height: 42px;
   border-radius: 21px;
@@ -875,7 +943,7 @@ h2 {
 
 .indicator__sell:before {
   content: '';
-  width: 36px;
+  width: 26px;
   height: 2px;
   left: 0;
   -webkit-transform: translateX(-100%);
@@ -889,16 +957,17 @@ h2 {
 }
 
 .indicator__sell--comment {
-  padding-left: 195px;
+  padding-left: 185px;
+  position: relative;
 }
 
 .indicator__sell--comment:before {
   content: '';
   background: url("../img/indicator/arrow.png") center no-repeat;
   position: absolute;
-  left: 150px;
+  left: 20px;
   width: 141px;
-  height: 16px;
+  height: 25px;
 }
 
 .indicator__take {
@@ -907,16 +976,17 @@ h2 {
 
 .indicator__take--comment {
   text-decoration: none;
-  padding-left: 200px;
+  position: relative;
+  padding-left: 185px;
 }
 
 .indicator__take--comment:before {
   content: '';
   background: url("../img/indicator/arrow.png") center no-repeat;
   position: absolute;
-  left: 115px;
+  left: 20px;
   width: 141px;
-  height: 16px;
+  height: 26px;
 }
 
 .referal {
@@ -1196,6 +1266,10 @@ h2 {
   background-image: linear-gradient(-51deg, #fbb203 0%, #fe7e01 100%);
   max-width: 203px;
   height: 46px;
+}
+
+.contacts {
+  padding-top: 20rem;
 }
 
 .contacts__container {
