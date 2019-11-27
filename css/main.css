@@ -314,8 +314,13 @@ h2 {
 }
 
 .advantages__btc {
-  bottom: 20px;
-  right: 80px;
+  bottom: 500px;
+  right: 190px;
+}
+
+.advantages__btc-second {
+  bottom: 300px;
+  left: 100px;
 }
 
 .container-cards {
@@ -1173,6 +1178,11 @@ h2 {
 .tariffs__btc {
   top: -80px;
   left: -80px;
+}
+
+.tariffs__btc-second {
+  bottom: -30px;
+  right: 0px;
 }
 
 .tariffs-cards {

@@ -34,7 +34,7 @@
 			<h1 class="header__title wow bounceInLeft">Как торговать, как <span class="header__title header__title--orange">успешный</span> трейдер?</h1>
 			<div class="subtitle header__subtitle wow bounceInLeft">Как давно вы мечтали заработать на бирже без особых потерь? <br>Время настало и мы рады помочь вам в этом.</div>
 			<button class="header__btn wow bounceInLeft">Узнать подробнее</button>
-			<div data-speed="50" class="layer header__eth"></div>
+			<div data-speed="40" class="layer header__eth"></div>
 			<div data-speed="90" class="layer layer-btc header__btc"></div>
 		</div>
 	</header>
@@ -64,10 +64,10 @@
 			<button class="advantages__btn">Узнать подробнее</button>
 		</div>
 		<div data-speed="70" class="layer layer-btc advantages__btc"></div>
+		<div data-speed="20" class="layer layer-btc advantages__btc-second"></div>
 	</section>
 	
 	<section class="stat">
-		<div data-speed="20" class="layer layer-btc stat__btc"></div>
 		<div class="stat__box">
 			<div class="stat__num counter">165</div>
 			<div class="stat__act">зарегестрировано</div>
@@ -140,7 +140,9 @@
 		<div class="indicator__overlay">
 			<div data-speed="50" class="layer layer-btc indicator__btc"></div>
 		
-			<img src="img/indicator/candles/1.png" alt="candle-1.png" class="indicator__candle indicator__candle--1" data-6500="bottom: -10px; opacity: 0" data-6800="bottom: 55px; opacity: 1">
+			<!-- <img src="img/indicator/candles/1.png" alt="candle-1.png" class="indicator__candle indicator__candle--1" data-6500="bottom: -10px; opacity: 0" data-6800="bottom: 55px; opacity: 1"> -->
+
+			<img src="img/indicator/candles/1.png" alt="candle-1.png" class="indicator__candle indicator__candle--1">
 		
 			<img src="img/indicator/candles/2.png" alt="candle-2.png" class="indicator__candle indicator__candle--2" data-6700="bottom: -60px; opacity: 0" data-7000="bottom: -10px; opacity: 1">
 		
@@ -291,14 +293,14 @@
 	</section>
 	<!-- /.referal -->
 	
-	
 	<section class="tariffs">
 		<h2 class="title tariffs__title wow bounceInLeft">Тарифы на индикатор</h2>
 		<!-- /.title tariffs__title -->
 		<div class="subtitle tariffs__subtitle">При покупке тарифа из предложенных ниже, вам будет предоставлен доступ к нашему индикатору на TradingView.</div>
 		<!-- /.tariffs__subtitle -->
 		<div class="tariffs-cards">
-			<div data-speed="30" class="layer layer-btc tariffs__btc"></div>
+			<div data-speed="60" class="layer layer-btc tariffs__btc"></div>
+			<div data-speed="90" class="layer layer-btc tariffs__btc-second"></div>
 			<div class="tariffs-cards__item">
 				<div class="up">
 					<div class="tariffs-cards__sup">Демо</div>
@@ -367,18 +369,6 @@
 	</section>
 	<!-- /.tariffs -->
 	
-	
-
-
-	<!-- счетчик пикселей от верха экрана pixel counter from the top of the screen -->
-	<div id="show-scroll" style="color: #fff; padding: 10px; position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,.7); border-radius: 5px; z-index: 10;">0</div>
-	<script>
-		window.addEventListener('scroll', function() {
-			document.querySelector('#show-scroll').textContent = pageYOffset + 'px';
-		});
-	</script>
-
-
 	<script 
 	src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" 
 	integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="

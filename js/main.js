@@ -1,23 +1,3 @@
-// //	screen scroll delay
-
-// const results = document.querySelector('.results');
-// console.log(results);
-
-// const indicator = document.querySelector('.indicator');
-// console.log(indicator);
-
-
-// const controller = ScrollMagic.Controller();
-
-// const scene = new ScrollMagic.Scene({
-// 	duration: 2000,
-// 	triggerElement: indicator,
-// 	triggerHook: 0
-// })
-// 	.addIndicators()
-// 	.setPin(indicator)
-// 	.addTo(controller);
-
 const results = document.querySelector(".results");
 const indicator = document.querySelector(".indicator");
 const referal = document.querySelector(".referal");
