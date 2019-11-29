@@ -36,6 +36,7 @@ button {
   font-family: "MullerExtraBold", "Roboto";
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 button:focus {
@@ -675,7 +676,6 @@ h2 {
   height: 151px;
   bottom: 143px;
   left: 320px;
-  z-index: 1;
 }
 
 .indicator__candle--17 {
@@ -683,7 +683,6 @@ h2 {
   height: 172px;
   bottom: 141px;
   left: 341px;
-  z-index: 1;
 }
 
 .indicator__candle--18 {
@@ -691,15 +690,13 @@ h2 {
   height: 187px;
   bottom: 143px;
   left: 362px;
-  z-index: 1;
 }
 
 .indicator__candle--19 {
-  width: 20px;
-  height: 78px;
+  width: 16px;
+  height: 178px;
   bottom: 279px;
   left: 376px;
-  z-index: 1;
 }
 
 .indicator__candle--20 {
@@ -724,10 +721,10 @@ h2 {
 }
 
 .indicator__candle--23 {
-  width: 13px;
-  height: 65px;
-  bottom: 411px;
-  left: 492px;
+  width: 20px;
+  height: 155px;
+  bottom: 371px;
+  left: 488px;
 }
 
 .indicator__candle--24 {
@@ -787,11 +784,10 @@ h2 {
 }
 
 .indicator__candle--32 {
-  width: 17px;
+  width: 12px;
   height: 225px;
   bottom: 186px;
   left: 659px;
-  z-index: 1;
 }
 
 .indicator__candle--33 {
@@ -799,15 +795,13 @@ h2 {
   height: 175px;
   bottom: 245px;
   left: 678px;
-  z-index: 1;
 }
 
 .indicator__candle--34 {
-  width: 20px;
+  width: 13px;
   height: 183px;
   bottom: 158px;
   left: 697px;
-  z-index: 1;
 }
 
 .indicator__candle--35 {
@@ -815,7 +809,6 @@ h2 {
   height: 85px;
   bottom: 138px;
   left: 737px;
-  z-index: 1;
 }
 
 .indicator__candle--36 {
@@ -823,7 +816,6 @@ h2 {
   height: 86px;
   bottom: 87px;
   left: 756px;
-  z-index: 1;
 }
 
 .indicator__candle--37 {
@@ -831,7 +823,6 @@ h2 {
   height: 215px;
   bottom: -20px;
   left: 776px;
-  z-index: 1;
 }
 
 .indicator__candle--38 {
@@ -839,7 +830,6 @@ h2 {
   height: 207px;
   bottom: 20px;
   left: 794px;
-  z-index: 1;
 }
 
 .indicator__candle--39 {
@@ -847,7 +837,6 @@ h2 {
   height: 103px;
   bottom: 88px;
   left: 813px;
-  z-index: 1;
 }
 
 .indicator__candle--40 {
@@ -855,7 +844,6 @@ h2 {
   height: 98px;
   bottom: 152px;
   left: 831px;
-  z-index: 1;
 }
 
 .indicator__candle--41 {
@@ -880,14 +868,14 @@ h2 {
 }
 
 .indicator__candle--44 {
-  width: 15px;
+  width: 13px;
   height: 171px;
   bottom: 119px;
   left: 907px;
 }
 
 .indicator__candle--45 {
-  width: 22px;
+  width: 13px;
   height: 193px;
   bottom: 42px;
   left: 924px;
@@ -908,7 +896,6 @@ h2 {
 
 .indicator__wrapper {
   position: absolute;
-  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,6 +913,11 @@ h2 {
 .indicator__wrapper--second {
   bottom: 107px;
   left: 314px;
+}
+
+.indicator__wrapper--third {
+  bottom: 465px;
+  left: 450px;
 }
 
 .indicator__sell {
@@ -992,6 +984,38 @@ h2 {
   left: 20px;
   width: 141px;
   height: 26px;
+}
+
+.indicator__buy {
+  position: absolute;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  width: 118px;
+  height: 42px;
+  background-color: #59ff09;
+  border-radius: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 147px;
+  left: 393px;
+}
+
+.indicator__buy:before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background-color: #00e4ff;
 }
 
 .referal {

@@ -1,3 +1,39 @@
+// add percent
+
+let perc = $("#percents"),
+		sell = $('.indicator__wrapper--first'),
+		sellComment = $('.indicator__sell--comment'),
+		take = $('.indicator__wrapper--second'),
+		takeComment = $('.indicator__take--comment');
+
+$(window).on("scroll load", function(){
+	let scrlTop = $(window).scrollTop();
+	
+	if (scrlTop > 10000 && scrlTop < 13000) {
+		perc.text(40);
+		sell.css({'bottom': '437px', 'left': '638px'});
+		sellComment.css('display', 'none');
+		take.css({'bottom': '467px', 'left': '448px'});
+		takeComment.css("display", "block");
+	
+	} else if (scrlTop > 13000) {
+		perc.text(50);
+		take.css({'bottom': '37px', 'left': '679px'});
+		takeComment.css("display", "none");
+	
+	} else {
+		perc.text(30);
+		take.css({'bottom': '107px', 'left': '314px'});
+		sell.css({'bottom': '257px', 'left': '263px'});
+		sellComment.css("display", "block");
+	}
+	if (scrlTop > 10000) {
+		sell.css({'bottom': '437px', 'left': '638px'});
+		sellComment.css('display', 'none');
+	} 
+});
+
+
 const results = document.querySelector(".results");
 const indicator = document.querySelector(".indicator");
 const referal = document.querySelector(".referal");
@@ -12,26 +48,26 @@ const sceneOne = new ScrollMagic.Scene({
 	triggerHook: 0,
 	offset: 170
 })
-	.setPin(results)
-	.addTo(controller);
+.setPin(results)
+.addTo(controller);
 
 const sceneTwo = new ScrollMagic.Scene({
-	duration: 11600,
+	duration: 8800,
 	triggerElement: indicator,
 	triggerHook: 1,
 	offset: 920
 })
-	.setPin(indicator)
-	.addTo(controller);
+.setPin(indicator)
+.addTo(controller);
 
 const sceneThree = new ScrollMagic.Scene({
-	duration: 2300,
+	duration: 2800,
 	triggerElement: referal,
 	triggerHook: 0,
 	offset: 70
 })
-	.setPin(referal)
-	.addTo(controller);
+.setPin(referal)
+.addTo(controller);
 
 
 
@@ -39,14 +75,13 @@ const sceneThree = new ScrollMagic.Scene({
 
 $(document).ready(function() {
 	let show = true;
-	$(window).on("scroll", function(){
+	$(window).on("scroll load", function(){
 
 		if(!show) {return false;} 
-
 		let wTop = $(window).scrollTop(); 
 		let eTop = $(".stat").offset().top; 
 
-		if(wTop + 400 >= eTop) { 
+		if(wTop + 500 >= eTop) { 
 			
 			$('.stat__num').each(function() { 
 				$(this).css("opacity", "1"); 
@@ -60,6 +95,7 @@ $(document).ready(function() {
 						$(this).text(Math.ceil(now));
 					}
 				});
+				// delay += 1000;
 			});
 
 			show = false;
