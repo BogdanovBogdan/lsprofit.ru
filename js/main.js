@@ -1,10 +1,20 @@
+// toggler nav button
+
+$('.nav-btn').on('click', function(e) {
+	e.preventDefault;
+	$('.nav-btn__gamb').toggleClass('nav-btn__gamb--active');
+	$('.nav-links').toggleClass('nav-links--show');
+});
+
+
+
 // add percent
 
 let perc = $("#percents"),
-		sell = $('.indicator__wrapper--first'),
-		sellComment = $('.indicator__sell--comment'),
-		take = $('.indicator__wrapper--second'),
-		takeComment = $('.indicator__take--comment');
+sell = $('.indicator__wrapper--first'),
+sellComment = $('.indicator__sell--comment'),
+take = $('.indicator__wrapper--second'),
+takeComment = $('.indicator__take--comment');
 
 $(window).on("scroll load", function(){
 	let scrlTop = $(window).scrollTop();
@@ -15,12 +25,12 @@ $(window).on("scroll load", function(){
 		sellComment.css('display', 'none');
 		take.css({'bottom': '467px', 'left': '448px'});
 		takeComment.css("display", "block");
-	
+
 	} else if (scrlTop > 13000) {
 		perc.text(50);
 		take.css({'bottom': '37px', 'left': '679px'});
 		takeComment.css("display", "none");
-	
+
 	} else {
 		perc.text(30);
 		take.css({'bottom': '107px', 'left': '314px'});
@@ -34,40 +44,42 @@ $(window).on("scroll load", function(){
 });
 
 
-const results = document.querySelector(".results");
-const indicator = document.querySelector(".indicator");
-const referal = document.querySelector(".referal");
 
 
 //SCROLLMAGIC
-const controller = new ScrollMagic.Controller();
+// const results = document.querySelector(".results");
+// const indicator = document.querySelector(".indicator");
+// const referal = document.querySelector(".referal");
 
-const sceneOne = new ScrollMagic.Scene({
-	duration: 3000,
-	triggerElement: results,
-	triggerHook: 0,
-	offset: 170
-})
-.setPin(results)
-.addTo(controller);
+// const controller = new ScrollMagic.Controller();
 
-const sceneTwo = new ScrollMagic.Scene({
-	duration: 8800,
-	triggerElement: indicator,
-	triggerHook: 1,
-	offset: 920
-})
-.setPin(indicator)
-.addTo(controller);
+// const sceneOne = new ScrollMagic.Scene({
+// 	duration: 3000,
+// 	triggerElement: results,
+// 	triggerHook: 0.5,
+// 	offset: 500
+// })
+// .setPin(results)
+// .addTo(controller);
 
-const sceneThree = new ScrollMagic.Scene({
-	duration: 2800,
-	triggerElement: referal,
-	triggerHook: 0,
-	offset: 70
-})
-.setPin(referal)
-.addTo(controller);
+// const sceneTwo = new ScrollMagic.Scene({
+// 	duration: 8800,
+// 	triggerElement: indicator,
+// 	triggerHook: 0.5,
+// 	offset: 600
+// })
+// .setPin(indicator)
+// .addTo(controller);
+ 
+// const sceneThree = new ScrollMagic.Scene({
+// 	duration: 2800,
+// 	triggerElement: referal,
+// 	triggerHook: 0.5,
+// 	offset: 440
+// })
+// .setPin(referal)
+// .addTo(controller);
+
 
 
 

@@ -18,22 +18,25 @@
 
 	<header class="header">
 		<nav class="nav">
-			<div class="nav-brand"><img src="img/header/logo.png" alt=""></div>
+			<button class="nav-btn"><span class="nav-btn__gamb"></span></button>
+			<div class="nav-brand"><img src="img/header/logo.png" alt="logo.png" class="nav-brand__img"></div>
 			<ul class="nav-links">
 				<li class="nav-links__item"><a href="#indicator" class="nav-links__link">Инструкции</a></li>
 				<li class="nav-links__item"><a href="#" class="nav-links__link">Отзывы</a></li>
 				<li class="nav-links__item"><a href="#" class="nav-links__link">Телеграм чат</a></li>
+				<div class="nav-enter__item nav-links__enter"><a href="#" class="nav-enter__item-enter">Вход</a></div>
+				<div class="nav-enter__item nav-links__enter"><a href="#" class="nav-enter__item-reg">Регистрация</a></div>
 			</ul>
 			<div class="nav-enter">
-				<div class="nav-enter__item"><a href="#" class="nav-enter__link">Вход</a></div>
-				<div class="nav-enter__item"><a href="#" class="nav-enter__link">Регистрация</a></div>
+				<div class="nav-enter__item"><a href="#" class="nav-enter__item-enter">Вход</a></div>
+				<div class="nav-enter__item"><a href="#" class="nav-enter__item-reg">Регистрация</a></div>
 			</div>
 		</nav>
 
 		<div class="header-wrapper">
 			<h1 class="header__title wow bounceInLeft">Как торговать, как <span class="header__title header__title--orange">успешный</span> трейдер?</h1>
 			<div class="subtitle header__subtitle wow bounceInLeft">Как давно вы мечтали заработать на бирже без особых потерь? <br>Время настало и мы рады помочь вам в этом.</div>
-			<button class="header__btn wow bounceInLeft">Узнать подробнее</button>
+			<button class="header__btn wow bounceInLeft" type="button">Узнать подробнее</button>
 			<div data-speed="40" class="layer header__eth"></div>
 			<div data-speed="90" class="layer layer-btc header__btc"></div>
 		</div>
@@ -65,6 +68,7 @@
 		</div>
 		<div data-speed="70" class="layer layer-btc advantages__btc"></div>
 		<div data-speed="20" class="layer layer-btc advantages__btc-second"></div>
+		<img src="img/btc-mobile.png" alt="btc-mobile.png" class="advantages-mobile__btc">
 	</section>
 	
 	<section class="stat">
@@ -92,15 +96,13 @@
 	<section class="results">
 		<h2 class="title results__title wow bounceInLeft">Наши результаты</h2>
 
-		<div class="results__wrapper">
+		<div class="results__wrapper">	
 			
 			<div class="embed-responsive__container">
 				<iframe src="https://www.youtube.com/embed/5qvU9bEPd8w?enablejsapi=1&html5=1" class="embed-responsive__video" id="video"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 				<div class="button" id="play-button">
 					<img src="img/results/play.png" >
 				</div>
-
 				<div class="button" id="pause-button">
 					<img src="img/results/play.png" >
 				</div>
@@ -119,10 +121,10 @@
 				<div class="results__card">
 					<img src="img/results/pos-1.png" class="results__img" alt="Your position #4">
 				</div>
-				<div class="results__card">
+				<div class="results__card results__card--hidden">
 					<img src="img/results/pos-1.png" class="results__img" alt="Your position #5">
 				</div>
-				<div class="results__card">
+				<div class="results__card results__card--hidden">
 					<img src="img/results/pos-1.png" class="results__img" alt="Your position #6">
 				</div>
 			</div>
@@ -213,7 +215,7 @@
 			<img src="img/indicator/candles/36.png" alt="candle-36.png" class="indicator__candle indicator__candle--36" data-13500="bottom: 17px; opacity: 0" data-13700="bottom: 87px; opacity: 1">
 		
 			<img src="img/indicator/candles/37.png" alt="candle-37.png" class="indicator__candle indicator__candle--37" data-13600="bottom: -60px; opacity: 0" data-13800="bottom: -20px; opacity: 1">
-			<!-- stop -->
+			<!~~ stop ~~>
 			<img src="img/indicator/candles/38.png" alt="candle-38.png" class="indicator__candle indicator__candle--38" data-14200="bottom: -40px; opacity: 0" data-14400="bottom: 20px; opacity: 1">
 		
 			<img src="img/indicator/candles/39.png" alt="candle-39.png" class="indicator__candle indicator__candle--39" data-14300="bottom: 18px; opacity: 0" data-14500="bottom: 88px; opacity: 1">
@@ -240,7 +242,6 @@
 				data-12800="opacity: 1;"
 
 				>sell</div>
-				<!-- bottom: 427px; left: 583px; -->
 
 				<div class="indicator__sell--comment" 
 					data-7800="padding-left: 235px; opacity: 0" 
@@ -248,9 +249,8 @@
 					data-9700="opacity: 1;" 
 					data-9800="opacity: 0;"
 					>Продаем при выходе сигнала 
-					<span class="indicator__sell--uppercase">sell</span>
+					<span class="uppercase">sell</span>
 				</div>
-				<!-- display: none -->
 			</div>
 
 			<div class="indicator__wrapper indicator__wrapper--second">
@@ -281,8 +281,26 @@
 				>Закрываем сделку</div>
 			</div>
 
-			<div class="indicator__buy" data-9800="opacity: 0" data-10000="opacity: 1;">buy</div>
+			<div class="indicator__wrapper indicator__wrapper--third">
+				<div class="indicator__buy" 
+				data-9800="opacity: 0" 
+				data-10000="opacity: 1;"
+				data-11700="opacity: 1;"
+				data-12000="opacity: 0;"
+				>buy</div>
+
+				<div class="indicator__buy--comment" 
+				data-9800="padding-left: 235px; opacity: 0" 
+				data-10000="padding-left: 185px; opacity: 1"
+				data-11700="opacity: 1;"
+				data-12000="opacity: 0;"
+				>Покупаем при выходе сигнала
+				<span class="uppercase">buy</span>
+				</div>
+			</div>
+
 		</div>
+
 		<div class="indicator__text" 
 		data-9200="opacity: 0; bottom: -30px;" 
 		data-9400="opacity: 1; bottom: 0px;"
@@ -294,15 +312,17 @@
 		data-12000="opacity: 0;"
 		data-13800="opacity: 0; bottom: -30px;"
 		data-14000="opacity: 1; bottom: 0px;"
-		>На этом этапе мы заработали <span id="percents">30</span>%</div>
+		>На этом этапе мы заработали <span id="percents">30</span>%
+		</div>
+
 		<div class="btn-center"><button class="indicator__btn">Узнать подробнее</button></div>
 	</section>
 	
 	<section class="referal">
 		<h2 class="title referal__title wow bounceInLeft">Реферальная программа</h2>
-		<!-- /.title referal__title -->
+		<!~~ /.title referal__title ~~>
 		<div class="subtitle referal__subtitle">Мы предоставляем 7-ми уровневую реферальную программу в глубину</div>
-		<!-- /.referal__subtitle -->
+		<!~~ /.referal__subtitle ~~>
 		<div class="referal__container">
 			<div class="wraper">
 				<div class="row-one">
@@ -337,20 +357,19 @@
 			</div>
 
 		</div>
-		<!-- /.referal__container -->
+		<!~~ /.referal__container ~~>
 		<div class="btn-center">
 			<button class="referal__btn">Начать зарабатывать</button>
 		</div>
 
 		<img src="img/referal/coins.png" alt="coins.png" class="referal__img" data-16200="right: -230px; transform: rotate(0deg)" data-19300="right: -20px; transform: rotate(-90deg)" data-20000="right: 300px; transform: rotate(-120deg)">
 	</section>
-	<!-- /.referal -->
 	
 	<section class="tariffs">
 		<h2 class="title tariffs__title wow bounceInLeft">Тарифы на индикатор</h2>
-		<!-- /.title tariffs__title -->
+		<!~~ /.title tariffs__title ~~>
 		<div class="subtitle tariffs__subtitle">При покупке тарифа из предложенных ниже, вам будет предоставлен доступ к нашему индикатору на TradingView.</div>
-		<!-- /.tariffs__subtitle -->
+		<!~~ /.tariffs__subtitle ~~>
 		<div class="tariffs-cards">
 			<div data-speed="60" class="layer layer-btc tariffs__btc"></div>
 			<div data-speed="90" class="layer layer-btc tariffs__btc-second"></div>
@@ -364,7 +383,7 @@
 					<button class="tariffs-cards__btn">Подробнее</button>
 				</div>
 			</div>
-			<!-- /.tariffs-cards__item -->
+			<!~~ /.tariffs-cards__item ~~>
 			<div class="tariffs-cards__item tariffs-cards__item--large">
 				<div class="up">
 					<div class="tariffs-cards__sup tariffs-cards__sup--large">Пол года</div>
@@ -375,7 +394,7 @@
 					<button class="tariffs-cards__btn tariffs-cards__btn--large">Подробнее</button>
 				</div>
 			</div>
-			<!-- /.tariffs-cards__item -->
+			<!~~ /.tariffs-cards__item ~~>
 			<div class="tariffs-cards__item tariffs-cards__item--large">
 				<div class="up">
 					<div class="tariffs-cards__sup tariffs-cards__sup--large">Три месяца</div>
@@ -386,7 +405,7 @@
 					<button class="tariffs-cards__btn tariffs-cards__btn--large">Подробнее</button>
 				</div>
 			</div>
-			<!-- /.tariffs-cards__item -->
+			<!~~ /.tariffs-cards__item ~~>
 			<div class="tariffs-cards__item">
 				<div class="up">
 					<div class="tariffs-cards__sup">Месяц</div>
@@ -397,9 +416,9 @@
 					<button class="tariffs-cards__btn">Подробнее</button>
 				</div>
 			</div>
-			<!-- /.tariffs-cards__item -->
+			<!~~ /.tariffs-cards__item ~~>
 		</div>
-		<!-- /.tariffs-cards -->
+		<!~~ /.tariffs-cards ~~>
 
 		<div class="contacts">
 			<h2 class="title contacts__title wow bounceInLeft">Контакты</h2>
@@ -418,9 +437,8 @@
 				</div>
 			</div>
 		</div>
-
 	</section>
-	<!-- /.tariffs -->
+	
 	
 	<script 
 	src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" 
@@ -443,17 +461,20 @@
 	<script src="js/main.js"></script>
 	<script src="js/skrollr.min.js"></script>
 	<script>
-		var s = skrollr.init();
-		new WOW().init();
-		AOS.init();
+		// var s = skrollr.init();
+		// new WOW().init();
+		// AOS.init();
 	</script>
 
 	<!-- счетчик пикселей от верха экрана pixel counter from the top of the screen -->
-		<div id="show-scroll" style="color: #fff; padding: 10px; position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,.7); border-radius: 5px">0</div>
-		<script>
-			window.addEventListener('scroll', function() {
-				document.querySelector('#show-scroll').textContent = Math.round(pageYOffset) + 'px';
-			});
-		</script>
+	<div id="show-scroll" style="color: #fff; padding: 10px; position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,.7); border-radius: 5px">0</div>
+	<script>
+		window.addEventListener('scroll', function() {
+			document.querySelector('#show-scroll').textContent = Math.round(pageYOffset) + 'px';
+
+			// document.querySelector('#show-scroll').textContent = window.innerWidth;
+
+		});
+	</script>
 </body>
 </html>
