@@ -1,3 +1,15 @@
+// changing text on small screen
+
+if (window.innerWidth < 576) {
+	$('.referal__subtitle').text('7-ми уровневая реферальная программа в глубину');
+	$('.referal__container').after($('.referal__subtitle'));
+	$('.indicator__title').text('Работа индикатора');
+	$('.indicator__sell--comment').html("Продаем при сигнале <span class='uppercase'>sell</span>");
+}
+
+
+
+
 // toggler nav button
 
 $('.nav-btn').on('click', function(e) {
@@ -10,38 +22,40 @@ $('.nav-btn').on('click', function(e) {
 
 // add percent
 
-let perc = $("#percents"),
-sell = $('.indicator__wrapper--first'),
-sellComment = $('.indicator__sell--comment'),
-take = $('.indicator__wrapper--second'),
-takeComment = $('.indicator__take--comment');
+if (window.innerWidth > 1169) {
+	let perc = $("#percents"),
+	sell = $('.indicator__wrapper--first'),
+	sellComment = $('.indicator__sell--comment'),
+	take = $('.indicator__wrapper--second'),
+	takeComment = $('.indicator__take--comment');
 
-$(window).on("scroll load", function(){
-	let scrlTop = $(window).scrollTop();
-	
-	if (scrlTop > 10000 && scrlTop < 13000) {
-		perc.text(40);
-		sell.css({'bottom': '437px', 'left': '638px'});
-		sellComment.css('display', 'none');
-		take.css({'bottom': '467px', 'left': '448px'});
-		takeComment.css("display", "block");
+	$(window).on("scroll load", function(){
+		let scrlTop = $(window).scrollTop();
+		
+		if (scrlTop > 10000 && scrlTop < 13000) {
+			perc.text(40);
+			sell.css({'bottom': '437px', 'left': '638px'});
+			sellComment.css('display', 'none');
+			take.css({'bottom': '467px', 'left': '448px'});
+			takeComment.css("display", "block");
 
-	} else if (scrlTop > 13000) {
-		perc.text(50);
-		take.css({'bottom': '37px', 'left': '679px'});
-		takeComment.css("display", "none");
+		} else if (scrlTop > 13000) {
+			perc.text(50);
+			take.css({'bottom': '37px', 'left': '679px'});
+			takeComment.css("display", "none");
 
-	} else {
-		perc.text(30);
-		take.css({'bottom': '107px', 'left': '314px'});
-		sell.css({'bottom': '257px', 'left': '263px'});
-		sellComment.css("display", "block");
-	}
-	if (scrlTop > 10000) {
-		sell.css({'bottom': '437px', 'left': '638px'});
-		sellComment.css('display', 'none');
-	} 
-});
+		} else {
+			perc.text(30);
+			take.css({'bottom': '107px', 'left': '314px'});
+			sell.css({'bottom': '257px', 'left': '263px'});
+			sellComment.css("display", "block");
+		}
+		if (scrlTop > 10000) {
+			sell.css({'bottom': '437px', 'left': '638px'});
+			sellComment.css('display', 'none');
+		} 
+	});
+}
 
 
 
@@ -70,7 +84,7 @@ $(window).on("scroll load", function(){
 // })
 // .setPin(indicator)
 // .addTo(controller);
- 
+
 // const sceneThree = new ScrollMagic.Scene({
 // 	duration: 2800,
 // 	triggerElement: referal,

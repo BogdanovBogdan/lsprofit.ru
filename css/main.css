@@ -744,6 +744,13 @@ h2 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .advantages {
+    background-position: bottom;
+    background-size: contain;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .advantages-mobile__btc {
     display: block;
@@ -759,11 +766,6 @@ h2 {
 }
 
 @media screen and (max-width: 448px) {
-  .advantages {
-    background-position: bottom;
-    background-size: contain;
-  }
-
   .advantages__btn {
     margin-top: 7rem;
     margin-bottom: 70px;
@@ -1019,6 +1021,10 @@ h2 {
 }
 
 @media screen and (max-width: 766px) {
+  .results {
+    background: #172a3b;
+  }
+
   .results__img {
     width: 100%;
   }
@@ -1516,7 +1522,7 @@ h2 {
 
 .indicator__sell--comment:before {
   content: '';
-  background: url("../img/indicator/arrow.png") center no-repeat;
+  background: url("../img/indicator/arrow.png") left no-repeat;
   position: absolute;
   left: 20px;
   width: 141px;
@@ -1535,7 +1541,7 @@ h2 {
 
 .indicator__take--comment:before {
   content: '';
-  background: url("../img/indicator/arrow.png") center no-repeat;
+  background: url("../img/indicator/arrow.png") left no-repeat;
   position: absolute;
   left: 20px;
   width: 141px;
@@ -1578,7 +1584,7 @@ h2 {
 
 .indicator__buy--comment:before {
   content: '';
-  background: url("../img/indicator/arrow.png") center no-repeat;
+  background: url("../img/indicator/arrow.png") left no-repeat;
   position: absolute;
   left: 20px;
   width: 141px;
@@ -1587,6 +1593,516 @@ h2 {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1169px) {
+  .indicator__text {
+    font-size: 5.5rem;
+  }
+
+  .indicator__wrapper {
+    font-size: 1.9rem;
+  }
+
+  .indicator__buy--comment,
+  .indicator__sell--comment,
+  .indicator__take--comment {
+    padding-left: 110px;
+  }
+
+  .indicator__buy--comment:before,
+  .indicator__sell--comment:before,
+  .indicator__take--comment:before {
+    left: 10px;
+    width: 90px;
+    height: 20px;
+  }
+
+  .indicator__candle--42,
+  .indicator__candle--43,
+  .indicator__candle--44,
+  .indicator__candle--45 {
+    display: none;
+  }
+
+  .indicator__overlay {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .indicator__btn {
+    margin-top: 7rem;
+  }
+
+  .indicator__text {
+    font-size: 4rem;
+  }
+
+  .indicator__wrapper {
+    font-size: 1.6rem;
+  }
+
+  .indicator__wrapper--first {
+    left: 253px;
+  }
+
+  .indicator__wrapper--third {
+    left: 383px;
+  }
+
+  .indicator__sell,
+  .indicator__buy {
+    font-size: 1.6rem;
+    width: 74px;
+    height: 30px;
+  }
+
+  .indicator__sell:before,
+  .indicator__buy:before {
+    width: 16px;
+  }
+
+  .indicator__sell--comment,
+  .indicator__buy--comment {
+    padding-left: 100px;
+    width: 320px;
+  }
+
+  .indicator__sell--comment:before,
+  .indicator__buy--comment:before {
+    left: 5px;
+  }
+
+  .indicator__buy--comment:before {
+    height: 35px;
+  }
+
+  .indicator__candle--33,
+  .indicator__candle--34,
+  .indicator__candle--35,
+  .indicator__candle--36,
+  .indicator__candle--37,
+  .indicator__candle--38,
+  .indicator__candle--39,
+  .indicator__candle--40,
+  .indicator__candle--41 {
+    display: none;
+  }
+
+  .indicator__overlay {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .indicator {
+    background: url("../img/indicator/bg-mobile.png") center no-repeat;
+    background-size: 100% 90%;
+  }
+
+  .indicator__text {
+    font-size: 3.1rem;
+  }
+
+  .indicator__title {
+    width: 400px;
+  }
+
+  .indicator__title:before {
+    top: 20%;
+  }
+
+  .indicator__sell--comment,
+  .indicator__buy--comment,
+  .indicator__take--comment {
+    padding-left: 20px;
+    max-width: 230px;
+  }
+
+  .indicator__sell--comment:before,
+  .indicator__buy--comment:before,
+  .indicator__take--comment:before {
+    content: none;
+  }
+
+  .indicator__wrapper--third {
+    display: none;
+  }
+
+  .indicator__wrapper--second {
+    bottom: 67px;
+    left: 207px;
+  }
+
+  .indicator__wrapper--first {
+    left: 151px;
+    bottom: 207px;
+  }
+
+  .indicator__overlay {
+    margin-top: 5rem;
+    width: 500px;
+    height: 300px;
+  }
+
+  .indicator__candle--2,
+  .indicator__candle--4,
+  .indicator__candle--8,
+  .indicator__candle--16,
+  .indicator__candle--17,
+  .indicator__candle--18,
+  .indicator__candle--19,
+  .indicator__candle--20,
+  .indicator__candle--21,
+  .indicator__candle--22,
+  .indicator__candle--23,
+  .indicator__candle--24,
+  .indicator__candle--25,
+  .indicator__candle--26,
+  .indicator__candle--27,
+  .indicator__candle--28,
+  .indicator__candle--29,
+  .indicator__candle--30,
+  .indicator__candle--31,
+  .indicator__candle--32 {
+    display: none;
+  }
+
+  .indicator__candle--1 {
+    bottom: 57px;
+    left: 6px;
+  }
+
+  .indicator__candle--5 {
+    bottom: 22px;
+    left: 23px;
+  }
+
+  .indicator__candle--3 {
+    bottom: 38px;
+    left: 36px;
+  }
+
+  .indicator__candle--7 {
+    bottom: 20px;
+    left: 55px;
+  }
+
+  .indicator__candle--6 {
+    bottom: 85px;
+    left: 75px;
+  }
+
+  .indicator__candle--9 {
+    bottom: 140px;
+    left: 90px;
+  }
+
+  .indicator__candle--10 {
+    bottom: 130px;
+    left: 105px;
+  }
+
+  .indicator__candle--11 {
+    bottom: 45px;
+    left: 125px;
+  }
+
+  .indicator__candle--12 {
+    bottom: 45px;
+    left: 140px;
+  }
+
+  .indicator__candle--13 {
+    bottom: 75px;
+    left: 158px;
+  }
+
+  .indicator__candle--14 {
+    bottom: 15px;
+    left: 174px;
+  }
+
+  .indicator__candle--15 {
+    bottom: 50px;
+    left: 193px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .indicator {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .indicator__text {
+    font-size: 2.5rem;
+  }
+
+  .indicator__title:before {
+    top: 40%;
+  }
+
+  .indicator__wrapper--first {
+    left: 120px;
+    bottom: 130px;
+  }
+
+  .indicator__wrapper--second {
+    bottom: 30px;
+    left: 143px;
+  }
+
+  .indicator__sell:before,
+  .indicator__take:before {
+    content: none;
+  }
+
+  .indicator__sell--comment,
+  .indicator__take--comment {
+    padding-left: 15px;
+    max-width: 210px;
+    text-align: end;
+  }
+
+  .indicator__sell {
+    width: 66px;
+    height: 23px;
+    border-radius: 8px;
+  }
+
+  .indicator__candle--1 {
+    width: 6px;
+    height: 46px;
+    bottom: 17px;
+    left: 36px;
+  }
+
+  .indicator__candle--5 {
+    width: 5px;
+    height: 47px;
+    bottom: 29px;
+    left: 45px;
+  }
+
+  .indicator__candle--3 {
+    width: 5px;
+    height: 72px;
+    bottom: 37px;
+    left: 54px;
+  }
+
+  .indicator__candle--7 {
+    width: 8px;
+    height: 72px;
+    bottom: 20px;
+    left: 63px;
+  }
+
+  .indicator__candle--6 {
+    width: 4px;
+    height: 46px;
+    bottom: 65px;
+    left: 75px;
+  }
+
+  .indicator__candle--9 {
+    width: 6px;
+    height: 72px;
+    bottom: 80px;
+    left: 85px;
+  }
+
+  .indicator__candle--10 {
+    width: 7px;
+    height: 41px;
+    bottom: 110px;
+    left: 95px;
+  }
+
+  .indicator__candle--11 {
+    width: 7px;
+    height: 78px;
+    bottom: 65px;
+    left: 105px;
+  }
+
+  .indicator__candle--12 {
+    width: 8px;
+    height: 65px;
+    bottom: 65px;
+    left: 115px;
+  }
+
+  .indicator__candle--13 {
+    width: 6px;
+    height: 33px;
+    bottom: 75px;
+    left: 126px;
+  }
+
+  .indicator__candle--14 {
+    width: 6px;
+    height: 51px;
+    bottom: 40px;
+    left: 136px;
+  }
+
+  .indicator__candle--15 {
+    width: 7px;
+    height: 54px;
+    bottom: 50px;
+    left: 147px;
+  }
+
+  .indicator__overlay {
+    width: 400px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .indicator__btn {
+    margin-top: 4rem;
+  }
+
+  .indicator__text {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .indicator__title {
+    width: auto;
+  }
+
+  .indicator__sell,
+  .indicator__take {
+    width: 66px;
+    height: 23px;
+    border-radius: 8px;
+  }
+
+  .indicator__sell:before,
+  .indicator__take:before {
+    content: none;
+  }
+
+  .indicator__sell--comment,
+  .indicator__take--comment {
+    width: 110px;
+    text-align: end;
+  }
+
+  .indicator__take--comment {
+    width: 85px;
+    padding-left: 5px;
+    bottom: 15px;
+  }
+
+  .indicator__wrapper--second {
+    bottom: 25px;
+  }
+
+  .indicator__wrapper--first {
+    left: 120px;
+    bottom: 130px;
+  }
+
+  .indicator__overlay {
+    margin-top: 1.8rem;
+    width: 300px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .indicator__btn {
+    margin-top: 2.75rem;
+  }
+
+  .indicator__take--comment {
+    width: 75px;
+  }
+
+  .indicator__sell--comment {
+    width: 105px;
+  }
+
+  .indicator__wrapper--first {
+    left: 83px;
+    bottom: 100px;
+  }
+
+  .indicator__wrapper--second {
+    bottom: 11px;
+    left: 114px;
+  }
+
+  .indicator__overlay {
+    width: 261px;
+    height: 132px;
+  }
+
+  .indicator__candle--1 {
+    bottom: 17px;
+    left: 6px;
+  }
+
+  .indicator__candle--5 {
+    bottom: 29px;
+    left: 15px;
+  }
+
+  .indicator__candle--3 {
+    bottom: 37px;
+    left: 24px;
+  }
+
+  .indicator__candle--7 {
+    bottom: 20px;
+    left: 33px;
+  }
+
+  .indicator__candle--6 {
+    bottom: 65px;
+    left: 45px;
+  }
+
+  .indicator__candle--9 {
+    bottom: 70px;
+    left: 55px;
+  }
+
+  .indicator__candle--10 {
+    bottom: 82px;
+    left: 65px;
+  }
+
+  .indicator__candle--11 {
+    bottom: 40px;
+    left: 75px;
+  }
+
+  .indicator__candle--12 {
+    bottom: 35px;
+    left: 85px;
+  }
+
+  .indicator__candle--13 {
+    bottom: 45px;
+    left: 96px;
+  }
+
+  .indicator__candle--14 {
+    bottom: 20px;
+    left: 106px;
+  }
+
+  .indicator__candle--15 {
+    bottom: 40px;
+    left: 117px;
+  }
 }
 
 .referal {
@@ -1761,6 +2277,154 @@ h2 {
   animation-delay: 5.5s;
 }
 
+@media screen and (max-width: 1169px) {
+  .referal__img {
+    right: -300px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .row-one__comment {
+    top: 5%;
+  }
+
+  .row-two__comment {
+    right: 10%;
+    top: -3%;
+  }
+
+  .row-three {
+    top: 5px;
+  }
+
+  .row-three__comment {
+    right: -4%;
+    top: -5%;
+  }
+
+  .row-four,
+  .row-five {
+    display: none;
+  }
+
+  .row-comment {
+    width: 80%;
+    line-height: 1.3;
+    font-size: 2.6rem;
+  }
+
+  .referal__subtitle {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .row-comment {
+    font-size: 2.4rem;
+  }
+
+  .referal {
+    background: #172a3b;
+  }
+
+  .referal__img {
+    right: -350px;
+  }
+
+  .referal__title:before {
+    top: 20%;
+  }
+
+  .referal__title:after {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .row-comment {
+    font-size: 2.2rem;
+  }
+
+  .row-one__comment {
+    top: 14%;
+  }
+
+  .row-two__comment {
+    top: 3%;
+    right: 0;
+  }
+
+  .row-three {
+    display: none;
+  }
+
+  .referal__btn {
+    margin-top: 7rem;
+  }
+
+  .referal__subtitle {
+    margin-top: 3.5rem;
+  }
+
+  .referal__container {
+    margin-top: 4.8rem;
+  }
+
+  .referal__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .row-comment {
+    width: 90%;
+    font-size: 1.75rem;
+  }
+
+  .row-one__comment {
+    right: 23%;
+  }
+
+  .row-one__users {
+    height: 50px;
+  }
+
+  .row-one__arrows {
+    height: 36px;
+  }
+
+  .row-two__comment {
+    right: -5%;
+  }
+
+  .row-two__users {
+    height: 36px;
+  }
+
+  .row-two__arrows {
+    height: 22px;
+    width: 164px;
+  }
+
+  .referal__title:before {
+    top: 40%;
+  }
+
+  .referal__btn {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .referal__subtitle {
+    font-size: 1.75rem;
+  }
+
+  .referal__btn {
+    margin-top: 2.7rem;
+  }
+}
+
 .tariffs {
   background: url("../img/contacts/bg.png") center no-repeat;
   background-size: cover;
@@ -1797,6 +2461,7 @@ h2 {
 
 .tariffs-cards__item {
   max-width: 249px;
+  width: 25%;
   min-height: 278px;
   border: 2px solid #0be7ab;
   background-color: #1c3d4e;
@@ -1845,6 +2510,14 @@ h2 {
   font-size: 18px;
 }
 
+.tariffs-cards__text--item {
+  margin-bottom: 6px;
+}
+
+.tariffs-cards__text--item:last-child {
+  margin-bottom: 0;
+}
+
 .tariffs-cards__title {
   font-family: "Muller Bold", "Roboto";
   font-weight: 700;
@@ -1859,6 +2532,7 @@ h2 {
 .tariffs-cards__btn {
   font-family: "Muller Medium", "Roboto";
   max-width: 193px;
+  width: 100%;
   height: 45px;
   background-color: #fe7201;
   margin-top: 2.1rem;
@@ -1871,6 +2545,20 @@ h2 {
   background-image: linear-gradient(-51deg, #fbb203 0%, #fe7e01 100%);
   max-width: 203px;
   height: 46px;
+}
+
+@media screen and (max-width: 991px) {
+  .tariffs-cards {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .tariffs-cards__item {
+    width: 50%;
+    margin-right: 0;
+  }
 }
 
 .contacts {

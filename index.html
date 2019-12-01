@@ -215,7 +215,7 @@
 			<img src="img/indicator/candles/36.png" alt="candle-36.png" class="indicator__candle indicator__candle--36" data-13500="bottom: 17px; opacity: 0" data-13700="bottom: 87px; opacity: 1">
 		
 			<img src="img/indicator/candles/37.png" alt="candle-37.png" class="indicator__candle indicator__candle--37" data-13600="bottom: -60px; opacity: 0" data-13800="bottom: -20px; opacity: 1">
-			<!~~ stop ~~>
+			
 			<img src="img/indicator/candles/38.png" alt="candle-38.png" class="indicator__candle indicator__candle--38" data-14200="bottom: -40px; opacity: 0" data-14400="bottom: 20px; opacity: 1">
 		
 			<img src="img/indicator/candles/39.png" alt="candle-39.png" class="indicator__candle indicator__candle--39" data-14300="bottom: 18px; opacity: 0" data-14500="bottom: 88px; opacity: 1">
@@ -243,13 +243,7 @@
 
 				>sell</div>
 
-				<div class="indicator__sell--comment" 
-					data-7800="padding-left: 235px; opacity: 0" 
-					data-8000="padding-left: 185px; opacity: 1" 
-					data-9700="opacity: 1;" 
-					data-9800="opacity: 0;"
-					>Продаем при выходе сигнала 
-					<span class="uppercase">sell</span>
+				<div class="indicator__sell--comment" id="sellComment">Продаем при выходе сигнала <span class="uppercase">sell</span>
 				</div>
 			</div>
 
@@ -320,44 +314,42 @@
 	
 	<section class="referal">
 		<h2 class="title referal__title wow bounceInLeft">Реферальная программа</h2>
-		<!~~ /.title referal__title ~~>
 		<div class="subtitle referal__subtitle">Мы предоставляем 7-ми уровневую реферальную программу в глубину</div>
-		<!~~ /.referal__subtitle ~~>
 		<div class="referal__container">
 			<div class="wraper">
 				<div class="row-one">
 
 					<img src="img/referal/one-user.png" alt="user.png" class="row-one__users" data-16200="top: 30px; opacity: 0" data-16400="top: 0px; opacity: 1">
-					<div class="row-one__comment" data-16400="opacity: 0" data-16600="opacity: 1">-10% от покупки Вашего реферала</div>
+					<div class="row-one__comment row-comment" data-16400="opacity: 0" data-16600="opacity: 1">-10% от покупки Вашего реферала</div>
 					<img src="img/referal/two-arrows.png" alt="two-arrows.png" class="row-one__arrows" data-16800="opacity: 0" data-16900="opacity: 1">
 				</div>
 
 				<div class="row-two">
 					<img src="img/referal/two-users.png" alt="user.png" class="row-two__users" data-16800="top: 20px; opacity: 0" data-16900="top: 0px; opacity: 1">
-					<div class="row-two__comment" data-16900="opacity: 0" data-17100="opacity: 1">-7% от покупки Вашего реферала</div>
+					<div class="row-two__comment row-comment" data-16900="opacity: 0" data-17100="opacity: 1">-7% от покупки Вашего реферала</div>
 					<img src="img/referal/four-arrows.png" alt="arrows.png" class="row-two__arrows" data-17300="opacity: 0" data-17500="opacity: 1">
 				</div>
 
 				<div class="row-three">
 					<img src="img/referal/four-users.png" alt="user.png" class="row-three__users" data-17300="top: 20px; opacity: 0" data-17500="top: 0px; opacity: 1">
-					<div class="row-three__comment" data-17500="opacity: 0" data-17700="opacity: 1">-5% от покупки Вашего реферала</div>
+					<div class="row-three__comment row-comment" data-17500="opacity: 0" data-17700="opacity: 1">-5% от покупки Вашего реферала</div>
 					<img src="img/referal/four2-arrows.png" alt="arrows.png" data-17900="opacity: 0" data-18100="opacity: 1" class="row-three__arrows">
 				</div>
 
 				<div class="row-four">
 					<img src="img/referal/four-users-smaller.png" alt="user.png" class="row-four__users" data-17900="top: 20px; opacity: 0" data-18100="top: 0px; opacity: 1">
-					<div class="row-four__comment" data-18100="opacity: 0" data-18300="opacity: 1">-3% от покупки Вашего реферала</div>
+					<div class="row-four__comment row-comment" data-18100="opacity: 0" data-18300="opacity: 1">-3% от покупки Вашего реферала</div>
 					<img src="img/referal/eight-arrows.png" alt="arrows.png" data-18500="opacity: 0" data-18700="opacity: 1" class="row-four__arrows">
 				</div>
 
 				<div class="row-five">
 					<img src="img/referal/eight-users.png" alt="user.png" class="row-five__users" data-18500="top: 20px; opacity: 0" data-18700="top: 0px; opacity: 1">
-					<div class="row-five__comment" data-18700="opacity: 0" data-18900="opacity: 1">-2% от покупки Вашего реферала</div>
+					<div class="row-five__comment row-comment" data-18700="opacity: 0" data-18900="opacity: 1">-2% от покупки Вашего реферала</div>
 				</div>
 			</div>
 
 		</div>
-		<!~~ /.referal__container ~~>
+		<!-- /.referal__container -->
 		<div class="btn-center">
 			<button class="referal__btn">Начать зарабатывать</button>
 		</div>
@@ -367,9 +359,9 @@
 	
 	<section class="tariffs">
 		<h2 class="title tariffs__title wow bounceInLeft">Тарифы на индикатор</h2>
-		<!~~ /.title tariffs__title ~~>
+		<!-- /.title tariffs__title -->
 		<div class="subtitle tariffs__subtitle">При покупке тарифа из предложенных ниже, вам будет предоставлен доступ к нашему индикатору на TradingView.</div>
-		<!~~ /.tariffs__subtitle ~~>
+		<!-- /.tariffs__subtitle -->
 		<div class="tariffs-cards">
 			<div data-speed="60" class="layer layer-btc tariffs__btc"></div>
 			<div data-speed="90" class="layer layer-btc tariffs__btc-second"></div>
@@ -379,46 +371,60 @@
 					<div class="tariffs-cards__title">Бесплатно</div>
 				</div>
 				<div class="down">
-					<div class="tariffs-cards__text">Доступ на 3 дня</div>
+					<div class="tariffs-cards__text">
+						<div class="tariffs-cards__text--item">Доступ на 3 дня</div>
+						</div>
 					<button class="tariffs-cards__btn">Подробнее</button>
 				</div>
 			</div>
-			<!~~ /.tariffs-cards__item ~~>
+			<!-- /.tariffs-cards__item -->
 			<div class="tariffs-cards__item tariffs-cards__item--large">
 				<div class="up">
 					<div class="tariffs-cards__sup tariffs-cards__sup--large">Пол года</div>
 					<div class="tariffs-cards__title tariffs-cards__title--large">$ 100 /М</div>
 				</div>
 				<div class="down">
-					<div class="tariffs-cards__text tariffs-cards__text--large">24/7 Служба поддержки<br>Доступ на 6 месяцев<br>Итого 600$</div>
+					<div class="tariffs-cards__text tariffs-cards__text--large">
+						<div class="tariffs-cards__text--item">24/7 Служба поддержки</div>
+						<div class="tariffs-cards__text--item">Доступ на 6 месяцев</div>
+						<div class="tariffs-cards__text--item">Итого 600$</div>
+					</div>
 					<button class="tariffs-cards__btn tariffs-cards__btn--large">Подробнее</button>
 				</div>
 			</div>
-			<!~~ /.tariffs-cards__item ~~>
+			<!-- /.tariffs-cards__item -->
 			<div class="tariffs-cards__item tariffs-cards__item--large">
 				<div class="up">
 					<div class="tariffs-cards__sup tariffs-cards__sup--large">Три месяца</div>
 					<div class="tariffs-cards__title tariffs-cards__title--large">$ 120 /M</div>
 				</div>
 				<div class="down">
-					<div class="tariffs-cards__text tariffs-cards__text--large">24/7 Служба поддержки<br>Доступ на 6 месяцев<br>Итого 360$</div>
+					<div class="tariffs-cards__text tariffs-cards__text--large">
+						<div class="tariffs-cards__text--item">24/7 Служба поддержки</div>
+						<div class="tariffs-cards__text--item">Доступ на 6 месяцев</div>
+						<div class="tariffs-cards__text--item">Итого 360$</div>
+					</div>
 					<button class="tariffs-cards__btn tariffs-cards__btn--large">Подробнее</button>
 				</div>
 			</div>
-			<!~~ /.tariffs-cards__item ~~>
+			<!-- /.tariffs-cards__item -->
 			<div class="tariffs-cards__item">
 				<div class="up">
 					<div class="tariffs-cards__sup">Месяц</div>
 					<div class="tariffs-cards__title">$ 140 /M</div>
 				</div>
 				<div class="down">
-					<div class="tariffs-cards__text">24/7 Служба поддержки<br>Доступ на 6 месяцев<br>Итого 140$</div>
+					<div class="tariffs-cards__text">
+						<div class="tariffs-cards__text--item">24/7 Служба поддержки</div>
+						<div class="tariffs-cards__text--item">Доступ на 6 месяцев</div>
+						<div class="tariffs-cards__text--item">Итого 140$</div>
+					</div>
 					<button class="tariffs-cards__btn">Подробнее</button>
 				</div>
 			</div>
-			<!~~ /.tariffs-cards__item ~~>
+			<!-- /.tariffs-cards__item -->
 		</div>
-		<!~~ /.tariffs-cards ~~>
+		<!-- /.tariffs-cards -->
 
 		<div class="contacts">
 			<h2 class="title contacts__title wow bounceInLeft">Контакты</h2>
@@ -467,14 +473,14 @@
 	</script>
 
 	<!-- счетчик пикселей от верха экрана pixel counter from the top of the screen -->
-	<div id="show-scroll" style="color: #fff; padding: 10px; position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,.7); border-radius: 5px">0</div>
+	<!-- <div id="show-scroll" style="color: #fff; padding: 10px; position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,.7); border-radius: 5px">0</div>
 	<script>
 		window.addEventListener('scroll', function() {
 			document.querySelector('#show-scroll').textContent = Math.round(pageYOffset) + 'px';
 
 			// document.querySelector('#show-scroll').textContent = window.innerWidth;
-
 		});
-	</script>
+	</script> -->
+
 </body>
 </html>
