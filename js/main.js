@@ -1,4 +1,25 @@
-// changing text on small screen
+if (window.innerWidth < 1169) {
+	let sellComment = $("#sellComment"),
+			takeComment = $(".indicator__take--comment"),
+			buyComment = $(".indicator__buy--comment");
+
+	sellComment.attr('data-7800', 'padding-left: 165px; opacity: 0');
+	sellComment.attr('data-8000', 'padding-left: 115px; opacity: 1');
+	takeComment.attr('data-9000', 'padding-left: 165px; opacity: 0');
+	takeComment.attr('data-9200', 'padding-left: 115px; opacity: 1');
+	buyComment.attr('data-9800', 'padding-left: 165px; opacity: 0');
+	buyComment.attr('data-10000', 'padding-left: 115px; opacity: 1');
+	takeComment.attr('data-10700', 'padding-left: 165px; opacity: 0');
+	takeComment.attr('data-10900', 'padding-left: 115px; opacity: 1');
+}
+
+
+// change text on small screen
+if (window.innerWidth < 992) {
+	document.querySelectorAll("[class*='--large']").forEach(function(e) {
+		e.className = e.className.replace(/\s\S+--large/,"");
+	});
+}
 
 if (window.innerWidth < 576) {
 	$('.referal__subtitle').text('7-ми уровневая реферальная программа в глубину');
@@ -6,7 +27,6 @@ if (window.innerWidth < 576) {
 	$('.indicator__title').text('Работа индикатора');
 	$('.indicator__sell--comment').html("Продаем при сигнале <span class='uppercase'>sell</span>");
 }
-
 
 
 
@@ -20,9 +40,10 @@ $('.nav-btn').on('click', function(e) {
 
 
 
-// add percent
+if (window.innerWidth > 1070) {
 
-if (window.innerWidth > 1169) {
+	// change of contents in different scroll
+
 	let perc = $("#percents"),
 	sell = $('.indicator__wrapper--first'),
 	sellComment = $('.indicator__sell--comment'),
@@ -55,45 +76,43 @@ if (window.innerWidth > 1169) {
 			sellComment.css('display', 'none');
 		} 
 	});
+
+
+	//SCROLLMAGIC
+
+	const results = document.querySelector(".results");
+	const indicator = document.querySelector(".indicator");
+	const referal = document.querySelector(".referal");
+
+	const controller = new ScrollMagic.Controller();
+
+	const sceneOne = new ScrollMagic.Scene({
+		duration: 3000,
+		triggerElement: results,
+		triggerHook: 0.5,
+		offset: 500
+	})
+	.setPin(results)
+	.addTo(controller);
+
+	const sceneTwo = new ScrollMagic.Scene({
+		duration: 8800,
+		triggerElement: indicator,
+		triggerHook: 0.5,
+		offset: 600
+	})
+	.setPin(indicator)
+	.addTo(controller);
+
+	const sceneThree = new ScrollMagic.Scene({
+		duration: 2800,
+		triggerElement: referal,
+		triggerHook: 0.5,
+		offset: 440
+	})
+	.setPin(referal)
+	.addTo(controller);
 }
-
-
-
-
-//SCROLLMAGIC
-// const results = document.querySelector(".results");
-// const indicator = document.querySelector(".indicator");
-// const referal = document.querySelector(".referal");
-
-// const controller = new ScrollMagic.Controller();
-
-// const sceneOne = new ScrollMagic.Scene({
-// 	duration: 3000,
-// 	triggerElement: results,
-// 	triggerHook: 0.5,
-// 	offset: 500
-// })
-// .setPin(results)
-// .addTo(controller);
-
-// const sceneTwo = new ScrollMagic.Scene({
-// 	duration: 8800,
-// 	triggerElement: indicator,
-// 	triggerHook: 0.5,
-// 	offset: 600
-// })
-// .setPin(indicator)
-// .addTo(controller);
-
-// const sceneThree = new ScrollMagic.Scene({
-// 	duration: 2800,
-// 	triggerElement: referal,
-// 	triggerHook: 0.5,
-// 	offset: 440
-// })
-// .setPin(referal)
-// .addTo(controller);
-
 
 
 

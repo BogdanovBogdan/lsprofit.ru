@@ -240,10 +240,14 @@
 				data-9800="opacity: 0;"
 				data-12600="opacity: 0;"
 				data-12800="opacity: 1;"
-
 				>sell</div>
 
-				<div class="indicator__sell--comment" id="sellComment">Продаем при выходе сигнала <span class="uppercase">sell</span>
+				<div class="indicator__sell--comment" id="sellComment"
+					data-7800="padding-left: 235px; opacity: 0" 
+					data-8000="padding-left: 185px; opacity: 1" 
+					data-9700="opacity: 1;" 
+					data-9800="opacity: 0;"
+				>Продаем при выходе сигнала <span class="uppercase">sell</span>
 				</div>
 			</div>
 
@@ -269,7 +273,6 @@
 				data-9800="opacity: 0;"
 				data-10700="opacity: 0; padding-left: 235px;" 
 				data-10900="opacity: 1; padding-left: 185px;"
-
 				data-11700="opacity: 1;"
 				data-12000="opacity: 0;"
 				>Закрываем сделку</div>
@@ -378,11 +381,14 @@
 				</div>
 			</div>
 			<!-- /.tariffs-cards__item -->
+
 			<div class="tariffs-cards__item tariffs-cards__item--large">
+
 				<div class="up">
 					<div class="tariffs-cards__sup tariffs-cards__sup--large">Пол года</div>
 					<div class="tariffs-cards__title tariffs-cards__title--large">$ 100 /М</div>
 				</div>
+
 				<div class="down">
 					<div class="tariffs-cards__text tariffs-cards__text--large">
 						<div class="tariffs-cards__text--item">24/7 Служба поддержки</div>
@@ -391,7 +397,9 @@
 					</div>
 					<button class="tariffs-cards__btn tariffs-cards__btn--large">Подробнее</button>
 				</div>
+				
 			</div>
+
 			<!-- /.tariffs-cards__item -->
 			<div class="tariffs-cards__item tariffs-cards__item--large">
 				<div class="up">
@@ -435,7 +443,7 @@
 				<div class="contacts__item">
 					<img src="img/contacts/traidingview.png" alt="TraidingView" class="contacts__img">
 				</div>
-				<div class="contacts__item">
+				<div class="contacts__item contacts__item--wider">
 					<img src="img/contacts/bitmex.png" alt="bitmex" class="contacts__img">
 				</div>
 				<div class="contacts__item">
@@ -467,20 +475,22 @@
 	<script src="js/main.js"></script>
 	<script src="js/skrollr.min.js"></script>
 	<script>
-		// var s = skrollr.init();
-		// new WOW().init();
-		// AOS.init();
+		if (window.innerWidth > 1070) {
+			var s = skrollr.init();
+			new WOW().init();
+			AOS.init();
+		}
 	</script>
 
 	<!-- счетчик пикселей от верха экрана pixel counter from the top of the screen -->
-	<!-- <div id="show-scroll" style="color: #fff; padding: 10px; position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,.7); border-radius: 5px">0</div>
+	<div id="show-scroll" style="color: #fff; padding: 10px; position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,.7); border-radius: 5px">0</div>
 	<script>
 		window.addEventListener('scroll', function() {
 			document.querySelector('#show-scroll').textContent = Math.round(pageYOffset) + 'px';
 
 			// document.querySelector('#show-scroll').textContent = window.innerWidth;
 		});
-	</script> -->
+	</script>
 
 </body>
 </html>
