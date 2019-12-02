@@ -132,6 +132,12 @@ h2 {
   display: none;
 }
 
+@media screen and (max-width: 1070px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
 @media screen and (max-width: 574px) {
   .title:after {
     display: none;
@@ -599,7 +605,7 @@ h2 {
 .header__eth {
   top: 20px;
   left: -132px;
-  background: url("../img/header/eth.png") center no-repeat;
+  background: url("../img/header/eth-c.png") center no-repeat;
   height: 160px;
   width: 100px;
 }
@@ -635,8 +641,15 @@ h2 {
   }
 }
 
+@media screen and (max-width: 448px) {
+  .header {
+    background: url("../img/header/bg-mobile.png") center no-repeat;
+    background-size: cover;
+  }
+}
+
 .advantages {
-  background: url("../img/advantages/bg.png") center no-repeat;
+  background: url("../img/advantages/bg-с.png") center no-repeat;
   background-size: cover;
   padding-bottom: 16.6rem;
   position: relative;
@@ -791,7 +804,7 @@ h2 {
 }
 
 .stat {
-  background: url("../img/stat-bg.png") center no-repeat;
+  background: url("../img/stat-bg-c.png") center no-repeat;
   background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -883,7 +896,7 @@ h2 {
 }
 
 .results {
-  background: url("../img/results/bg.png") center no-repeat;
+  background: url("../img/results/bg-с.png") center no-repeat;
   background-size: cover;
   padding-top: 20rem;
   padding-bottom: 20rem;
@@ -2558,11 +2571,6 @@ h2 {
 }
 
 @media screen and (max-width: 991px) {
-  .tariffs {
-    background: url("../img/contacts/bg-mobile.png") bottom no-repeat;
-    background-size: 100% 30%;
-  }
-
   .tariffs-cards {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -2587,6 +2595,11 @@ h2 {
 }
 
 @media screen and (max-width: 575px) {
+  .tariffs {
+    background: url("../img/contacts/bg-mobile.png") bottom no-repeat;
+    background-size: 100% 30%;
+  }
+
   .tariffs-cards__item {
     min-height: 302px;
     width: 45%;
