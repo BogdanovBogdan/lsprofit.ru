@@ -170,6 +170,7 @@ h2 {
   button {
     width: 209px;
     height: 42px;
+    font-size: 16px;
   }
 
   h1,
@@ -2613,6 +2614,7 @@ h2 {
   }
 
   .tariffs-cards__item {
+    min-height: 280px;
     width: 100%;
   }
 
@@ -2622,6 +2624,10 @@ h2 {
 
   .tariffs-cards__item:nth-child(n+4) {
     margin-top: 40px;
+  }
+
+  .tariffs-cards__item--short {
+    min-height: 240px;
   }
 }
 
