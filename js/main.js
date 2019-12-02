@@ -20,7 +20,6 @@ if (window.innerWidth < 992) {
 		e.className = e.className.replace(/\s\S+--large/,"");
 	});
 }
-
 if (window.innerWidth < 576) {
 	$('.referal__subtitle').text('7-ми уровневая реферальная программа в глубину');
 	$('.referal__container').after($('.referal__subtitle'));
@@ -29,9 +28,7 @@ if (window.innerWidth < 576) {
 }
 
 
-
 // toggler nav button
-
 $('.nav-btn').on('click', function(e) {
 	e.preventDefault;
 	$('.nav-btn__gamb').toggleClass('nav-btn__gamb--active');
@@ -39,11 +36,9 @@ $('.nav-btn').on('click', function(e) {
 });
 
 
-
 if (window.innerWidth > 1070) {
 
 	// change of contents in different scroll
-
 	let perc = $("#percents"),
 	sell = $('.indicator__wrapper--first'),
 	sellComment = $('.indicator__sell--comment'),
@@ -79,7 +74,6 @@ if (window.innerWidth > 1070) {
 
 
 	//SCROLLMAGIC
-
 	const results = document.querySelector(".results");
 	const indicator = document.querySelector(".indicator");
 	const referal = document.querySelector(".referal");
@@ -90,7 +84,7 @@ if (window.innerWidth > 1070) {
 		duration: 3000,
 		triggerElement: results,
 		triggerHook: 0.5,
-		offset: 500
+		offset: 600
 	})
 	.setPin(results)
 	.addTo(controller);
@@ -115,9 +109,7 @@ if (window.innerWidth > 1070) {
 }
 
 
-
 // start the counter, when the animated element go up to top window
-
 $(document).ready(function() {
 	let show = true;
 	$(window).on("scroll load", function(){
@@ -149,10 +141,17 @@ $(document).ready(function() {
 });
 
 
+// parallax
+function parallax(event) {
+	this.querySelectorAll('.layer').forEach(layer => {
+		let speed = layer.getAttribute('data-speed');
+		layer.style.transform = `translate(${event.clientX*speed/1000}px, ${event.clientY*speed/1000}px)`;
+	});
+}
+document.addEventListener('mousemove', parallax);
 
 
 // connection castomize button play to yt player 
-
 let player;
 
 // this function gets called when API is ready to use
