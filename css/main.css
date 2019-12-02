@@ -1111,17 +1111,12 @@ h2 {
 }
 
 .indicator {
-  background: url("../img/indicator/bg.png") center no-repeat;
+  background: url("../img/indicator/bg-c.png") center no-repeat;
   background-size: cover;
   padding-top: 165px;
   padding-bottom: 70px;
   position: relative;
   z-index: 1;
-}
-
-.indicator__animation {
-  background: url("../img/indicator/bg.png") center no-repeat;
-  background-size: cover;
 }
 
 .indicator__btc {
@@ -1536,7 +1531,7 @@ h2 {
 
 .indicator__sell--comment:before {
   content: '';
-  background: url("../img/indicator/arrow.png") left no-repeat;
+  background: url("../img/indicator/arrow-c.png") left no-repeat;
   position: absolute;
   left: 20px;
   width: 141px;
@@ -1555,7 +1550,7 @@ h2 {
 
 .indicator__take--comment:before {
   content: '';
-  background: url("../img/indicator/arrow.png") left no-repeat;
+  background: url("../img/indicator/arrow-c.png") left no-repeat;
   position: absolute;
   left: 20px;
   width: 141px;
@@ -1598,7 +1593,7 @@ h2 {
 
 .indicator__buy--comment:before {
   content: '';
-  background: url("../img/indicator/arrow.png") left no-repeat;
+  background: url("../img/indicator/arrow-c.png") left no-repeat;
   position: absolute;
   left: 20px;
   width: 141px;
@@ -1720,7 +1715,7 @@ h2 {
 
 @media screen and (max-width: 767px) {
   .indicator {
-    background: url("../img/indicator/bg-mobile.png") center no-repeat;
+    background: url("../img/indicator/bg-mobile-c.png") center no-repeat;
     background-size: 100% 90%;
   }
 
