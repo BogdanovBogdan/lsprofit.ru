@@ -2346,7 +2346,7 @@ h2 {
   }
 
   .referal__img {
-    right: -350px;
+    display: none;
   }
 
   .referal__title:before {
@@ -2386,10 +2386,6 @@ h2 {
 
   .referal__container {
     margin-top: 4.8rem;
-  }
-
-  .referal__img {
-    display: none;
   }
 }
 
@@ -2566,6 +2562,11 @@ h2 {
 }
 
 @media screen and (max-width: 991px) {
+  .tariffs {
+    background: url("../img/contacts/bg-mobile.png") bottom no-repeat;
+    background-size: 100% 30%;
+  }
+
   .tariffs-cards {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -2590,11 +2591,6 @@ h2 {
 }
 
 @media screen and (max-width: 575px) {
-  .tariffs {
-    background: url("../img/contacts/bg-mobile.png") bottom no-repeat;
-    background-size: 100% 30%;
-  }
-
   .tariffs-cards__item {
     min-height: 302px;
     width: 45%;
